@@ -1,241 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CAUVA SpA | Ingeniería Naval y Asesoría Marítima</title>
-<meta name="description" content="CAUVA SpA: ingeniería naval, certificación, regularización, medición de espesores, inspección de centros de cultivo y operaciones marítimas.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAUVA SpA | Ingeniería Naval</title>
+<meta name="description" content="CAUVA SpA: ingeniería naval, diseño 3D, certificación, inspecciones, experimento de inclinación y operaciones marítimas.">
 <style>
-:root{--navy:#061923;--navy2:#092838;--orange:#e7671e;--white:#f7f5f2;--line:rgba(255,255,255,.14)}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:var(--navy);color:var(--white);line-height:1.55}
-a{text-decoration:none;color:inherit}
-img{width:100%;display:block}
-.container{width:min(1180px,92%);margin:auto}
-
-.hero{min-height:100vh;background:linear-gradient(90deg,rgba(6,25,35,.97),rgba(6,25,35,.72),rgba(6,25,35,.18)),url('assets/hero.jpg') center/cover no-repeat;border-bottom:1px solid var(--line)}
-nav{height:82px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:900;letter-spacing:4px;font-size:34px;line-height:1}
-.brand small{display:block;color:var(--orange);letter-spacing:2px;font-size:13px;margin-top:6px}
-.menu{display:flex;align-items:center;gap:25px;font-size:13px;font-weight:800;text-transform:uppercase}
-.menu a:hover{color:var(--orange)}
-.nav-btn{border:1px solid var(--orange);padding:12px 18px}
-.nav-btn:hover{background:var(--orange);color:#fff}
-.hero-content{padding-top:105px;max-width:790px}
-h1{font-size:clamp(46px,8vw,86px);line-height:.98;letter-spacing:-2px;text-transform:uppercase;margin-bottom:22px}
-h1 span{color:var(--orange)}
-.hero-sub{font-size:21px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
-.hero-location{color:#dce4e8;font-size:18px;margin:22px 0 34px}
-.btn{display:inline-flex;align-items:center;gap:12px;background:var(--orange);color:#fff;padding:16px 26px;font-weight:900;text-transform:uppercase;font-size:14px;transition:.25s}
-.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
-.btn.dark{background:transparent;border:1px solid var(--orange)}
-section{padding:82px 0}
-.kicker{color:var(--orange);font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
-h2{font-size:clamp(32px,4vw,52px);line-height:1.05;letter-spacing:-1px;margin-bottom:18px}
-.light{background:#f4f2ee;color:#10212c}
-.dark{background:radial-gradient(circle at 15% 15%,rgba(231,103,30,.12),transparent 30%),linear-gradient(180deg,var(--navy),var(--navy2))}
-.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
-.about-img{overflow:hidden;box-shadow:0 20px 48px rgba(0,0,0,.18)}
-.about-img img{height:430px;object-fit:cover}
-.about p{color:#40505a;font-size:18px;margin-bottom:16px}
-.services-title{text-align:center;margin-bottom:48px}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.service{padding:34px;border-right:1px solid var(--line);min-height:335px}
-.service:last-child{border-right:0}
-.service-num{color:var(--orange);font-size:14px;font-weight:900;margin-bottom:12px}
-.service h3{font-size:22px;text-transform:uppercase;margin-bottom:16px}
-.service li{color:#d7dee2;margin-left:18px;margin-bottom:7px}
-.service li::marker{color:var(--orange)}
-.special-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
-.special-card{background:#102b3b;border:1px solid var(--line);padding:30px}
-.special-card h3{color:#fff;font-size:24px;margin-bottom:12px;text-transform:uppercase}
-.special-card p{color:#d7dee2;margin-bottom:12px}
-.special-card li{margin-left:18px;color:#d7dee2;margin-bottom:6px}
-.special-card li::marker{color:var(--orange)}
-.results-head{text-align:center;margin-bottom:34px}
-.results-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.result-card{background:var(--navy2);color:#fff;border:1px solid rgba(255,255,255,.2);overflow:hidden;box-shadow:0 24px 48px rgba(0,0,0,.22)}
-.result-card img{height:360px;object-fit:cover}
-.result-body{display:flex;gap:20px;align-items:center;padding:26px 30px;border-left:6px solid var(--orange)}
-.symbol{color:var(--orange);font-size:38px}
-.result-body h3{font-size:24px;margin-bottom:5px}
-.result-body p{color:#d7dee2}
-.operations{min-height:560px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(6,25,35,.97),rgba(6,25,35,.76),rgba(6,25,35,.12)),url('assets/operaciones.jpg') center/cover no-repeat;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.operations-box{max-width:620px}
-.operations h2 span{color:var(--orange)}
-.check-list{margin-top:24px}
-.check-list li{list-style:none;margin:10px 0;font-size:18px;color:#edf2f5}
-.check-list li:before{content:'✓';color:var(--orange);border:1px solid var(--orange);border-radius:50%;font-size:12px;width:20px;height:20px;display:inline-flex;justify-content:center;align-items:center;margin-right:10px}
-.clients{background:#f4f2ee;color:#10212c;padding:50px 0;border-top:1px solid #d9d6d0;border-bottom:1px solid #d9d6d0}
-.clients-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;text-align:center;text-transform:uppercase;font-weight:900;font-size:14px}
-.client{padding:22px 10px;border-right:1px solid #d2cdc4}
-.client:last-child{border-right:0}
-.client span{display:block;color:var(--orange);font-size:36px;margin-bottom:10px}
-.precontact{background:linear-gradient(180deg,var(--navy2),var(--navy))}
-.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
-.value{border:1px solid var(--line);padding:24px;background:rgba(255,255,255,.05)}
-.value strong{display:block;color:var(--orange);margin-bottom:8px;text-transform:uppercase}
-.contact{background:linear-gradient(90deg,rgba(6,25,35,.98),rgba(6,25,35,.88),rgba(6,25,35,.45)),url('assets/contacto.jpg') center/cover no-repeat;padding:96px 0}
-.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:end}
-.contact-card,.cta-box{background:rgba(6,25,35,.76);border:1px solid var(--line);padding:36px;backdrop-filter:blur(7px)}
-.contact-card h2{font-size:46px}
-.contact-card .intro{color:#d7dee2;font-size:18px;margin-bottom:22px}
-.contact-item{padding:13px 0;border-bottom:1px solid var(--line);color:#edf2f5;font-size:18px}
-.contact-item strong{color:#fff}
-.cta-box{border-color:var(--orange)}
-.cta-box h2{font-size:36px}
-.cta-box p{color:#d7dee2;margin:12px 0 24px}
-.cta-actions{display:flex;gap:12px;flex-wrap:wrap}
-footer{padding:30px 0;background:#031018;color:#b8c2c8;font-size:14px}
-footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.whatsapp{position:fixed;right:22px;bottom:22px;z-index:99;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 16px 38px rgba(0,0,0,.32)}
-@media(max-width:960px){
-  .menu{display:none}
-  .hero-content{padding-top:80px}
-  .services-grid,.results-grid,.about,.contact-grid,.clients-grid,.value-grid,.special-grid{grid-template-columns:1fr}
-  .service{border-right:0;border-bottom:1px solid var(--line)}
-  .client{border-right:0;border-bottom:1px solid #d2cdc4}
-  .result-card img{height:280px}
-  h1{font-size:48px}
-  .hero{min-height:86vh}
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;800;900&display=swap');
+:root{--bg:#07131c;--bg2:#0d2230;--card:#102d3d;--orange:#f47a20;--white:#f7f5f2;--muted:#b8c4ca;--line:rgba(255,255,255,.14);--light:#f2f3f0}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Montserrat,Arial,sans-serif;background:var(--bg);color:var(--white);line-height:1.55}a{text-decoration:none;color:inherit}img{width:100%;display:block}.container{width:min(1200px,92%);margin:auto}.eyebrow{color:var(--orange);font-size:13px;font-weight:900;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px}h1,h2,h3{font-family:'Bebas Neue',Arial,sans-serif;letter-spacing:.5px;line-height:.95}h1{font-size:clamp(64px,10vw,118px);text-transform:uppercase}h2{font-size:clamp(46px,6vw,76px);text-transform:uppercase;margin-bottom:18px}h3{font-size:34px;text-transform:uppercase}p{font-size:17px;color:var(--muted)}section{padding:92px 0}.btn{display:inline-flex;align-items:center;background:var(--orange);color:white;padding:16px 24px;font-weight:900;text-transform:uppercase;font-size:13px;border:1px solid var(--orange);transition:.25s}.btn:hover{transform:translateY(-2px)}.btn.outline{background:rgba(255,255,255,.04)}
+.hero{min-height:100vh;background:linear-gradient(90deg,rgba(7,19,28,.98),rgba(7,19,28,.76),rgba(7,19,28,.18)),linear-gradient(0deg,rgba(7,19,28,.86),rgba(7,19,28,.08)),url('assets/hero.jpg') center/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:120px;background:linear-gradient(0deg,var(--bg),transparent)}nav{height:86px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Bebas Neue';font-size:42px;letter-spacing:5px}.brand small{display:block;font-family:Montserrat;font-size:11px;letter-spacing:2px;color:var(--orange);font-weight:900;margin-top:-6px}.menu{display:flex;gap:22px;align-items:center;text-transform:uppercase;font-size:12px;font-weight:900}.menu a:hover{color:var(--orange)}.navcta{border:1px solid var(--orange);padding:11px 16px}.hero-content{max-width:850px;padding-top:110px}.hero h1 span{color:var(--orange)}.hero-sub{font-size:22px;color:#f2f5f6;font-weight:900;text-transform:uppercase;letter-spacing:2px;margin:22px 0 14px}.hero p{max-width:650px;margin-bottom:34px;color:#dce5e8}.actions{display:flex;gap:14px;flex-wrap:wrap}.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}.tags span{padding:10px 13px;border:1px solid var(--line);background:rgba(255,255,255,.06);font-size:12px;font-weight:900;text-transform:uppercase}
+.light{background:var(--light);color:#10212c}.light p{color:#40505a}.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}.about p{margin-bottom:16px;font-size:18px}.photo-frame{position:relative;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.2)}.photo-frame img{height:460px;object-fit:cover}.photo-label{position:absolute;left:24px;bottom:24px;background:rgba(7,19,28,.86);color:#fff;border-left:6px solid var(--orange);padding:15px 18px;font-weight:900;text-transform:uppercase;font-size:13px}
+.dark{background:radial-gradient(circle at 12% 10%,rgba(244,122,32,.15),transparent 34%),linear-gradient(180deg,var(--bg),var(--bg2))}.center{text-align:center;max-width:850px;margin:0 auto 52px}.center p{margin:auto;max-width:750px}.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.service{padding:34px;border-right:1px solid var(--line);min-height:340px}.service:last-child{border-right:0}.num{font-size:20px;color:var(--orange);font-weight:900;margin-bottom:13px}.service h3{margin-bottom:16px}ul{padding-left:18px}li{margin-bottom:8px;color:#dce3e7}li::marker{color:var(--orange)}.special-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}.special-card{background:linear-gradient(180deg,#102d3d,#081c29);border:1px solid var(--line);padding:30px;min-height:260px}.special-card h3{font-size:29px;margin-bottom:12px}.special-card p{margin-bottom:14px}
+.design{background:#fff;color:#10212c;overflow:hidden}.design-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}.design p{color:#40505a;margin-bottom:18px}.design li{color:#31454f}.render-mosaic{display:grid;grid-template-columns:1fr 1fr;gap:16px}.render-mosaic img{height:220px;object-fit:cover;background:#fff;box-shadow:0 18px 40px rgba(0,0,0,.12)}.render-mosaic img.wide{grid-column:span 2;height:280px}
+.projects{background:var(--light);color:#10212c}.projects p{color:#40505a}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px}.project{position:relative;overflow:hidden;background:#07131c;min-height:430px;box-shadow:0 25px 54px rgba(0,0,0,.18)}.project img{height:430px;object-fit:cover}.project:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,19,28,.92),rgba(7,19,28,.05) 65%)}.project-info{position:absolute;z-index:2;left:28px;right:28px;bottom:26px;color:#fff}.project-info .label{font-weight:900;color:var(--orange);text-transform:uppercase;margin-bottom:8px}.project-info h3{font-size:36px;margin-bottom:10px}.project-info p{color:#e8eef0}
+.specialized{background:linear-gradient(180deg,var(--bg2),var(--bg))}.spec-row{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center;margin-top:34px;border-top:1px solid var(--line);padding-top:34px}.spec-row:nth-child(even){grid-template-columns:.92fr 1.08fr}.spec-row img{height:410px;object-fit:cover;box-shadow:0 24px 52px rgba(0,0,0,.28)}.spec-box h3{font-size:42px;color:#fff;margin-bottom:10px}.spec-box p{margin-bottom:18px}
+.operations{min-height:620px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(7,19,28,.98),rgba(7,19,28,.78),rgba(7,19,28,.12)),url('assets/operaciones.jpg') center/cover no-repeat}.operations-box{max-width:650px}.operations h2 span{color:var(--orange)}
+.value{background:linear-gradient(180deg,var(--bg),#050d14)}.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}.value-card{border:1px solid var(--line);background:rgba(255,255,255,.05);padding:26px}.value-card strong{display:block;color:var(--orange);text-transform:uppercase;margin-bottom:10px}.gallery{background:#fff;color:#10212c}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}.gallery-grid img{height:220px;object-fit:cover;transition:.25s}.gallery-grid img:hover{transform:scale(1.02)}
+.contact{background:linear-gradient(90deg,rgba(7,19,28,.98),rgba(7,19,28,.88),rgba(7,19,28,.42)),url('assets/contacto.jpg') center/cover no-repeat;padding:105px 0}.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:end}.contact-card,.cta-box{background:rgba(7,19,28,.78);border:1px solid var(--line);padding:38px;backdrop-filter:blur(8px)}.contact-card h2{font-size:62px}.contact-card p{margin-bottom:20px}.contact-item{padding:13px 0;border-bottom:1px solid var(--line);font-size:18px;color:#edf2f5}.contact-item strong{color:#fff}.cta-box{border-color:var(--orange)}.cta-box h3{font-size:46px}.cta-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}footer{padding:30px 0;background:#02070b;color:#aeb8bd;font-size:14px}footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.whatsapp{position:fixed;right:22px;bottom:22px;z-index:99;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 16px 38px rgba(0,0,0,.32)}
+@media(max-width:960px){.menu{display:none}.hero-content{padding-top:80px}.about,.services,.special-grid,.design-grid,.project-grid,.spec-row,.spec-row:nth-child(even),.value-grid,.gallery-grid,.contact-grid{grid-template-columns:1fr}.service{border-right:0;border-bottom:1px solid var(--line)}h1{font-size:58px}.render-mosaic img,.render-mosaic img.wide,.project img,.project,.spec-row img{height:320px}}
 </style>
 </head>
 <body>
-<header class="hero" id="inicio">
-  <div class="container">
-    <nav>
-      <a href="#inicio" class="brand">CAUVA<small>INGENIERÍA NAVAL</small></a>
-      <div class="menu">
-        <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#resultados">Resultados</a><a href="#operaciones">Operaciones</a><a href="#contacto">Contacto</a><a href="#contacto" class="nav-btn">Cotizar</a>
-      </div>
-    </nav>
-    <div class="hero-content">
-      <h1>Ingeniería Naval <span>para Proyectos Marítimos</span></h1>
-      <div class="hero-sub">Diseño · Regularización · Certificación · Inspecciones</div>
-      <div class="hero-location">Puerto Montt | Concepción</div>
-      <a class="btn" href="#contacto">Solicitar cotización →</a>
-    </div>
-  </div>
-</header>
-
-<section class="light" id="nosotros">
-  <div class="container about">
-    <div>
-      <div class="kicker">Qué hacemos</div>
-      <h2>Ingeniería para embarcaciones, artefactos navales y operaciones marítimas.</h2>
-      <p>CAUVA SpA desarrolla soluciones técnicas para proyectos marítimos, acuícolas y navales, acompañando cada etapa desde el diseño hasta la aprobación documental.</p>
-      <p>Trabajamos con armadores, operadores marítimos, empresas acuícolas, empresas portuarias y astilleros.</p>
-      <a class="btn" href="#servicios">Ver servicios →</a>
-    </div>
-    <div class="about-img"><img src="assets/quienes-somos.jpg" alt="Equipo técnico en operación marítima"></div>
-  </div>
-</section>
-
-<section class="dark" id="servicios">
-  <div class="container">
-    <div class="services-title">
-      <div class="kicker">Nuestros servicios</div>
-      <h2>Soluciones técnicas para cada etapa</h2>
-    </div>
-    <div class="services-grid">
-      <div class="service">
-        <div class="service-num">01</div><h3>Ingeniería Naval</h3>
-        <ul><li>Elaboración de planos.</li><li>Cálculos estructurales.</li><li>Escantillones y líneas de formas.</li><li>Estudios y análisis técnicos.</li><li>Apoyo en proyectos navales.</li></ul>
-      </div>
-      <div class="service">
-        <div class="service-num">02</div><h3>Certificación y Regularización</h3>
-        <ul><li>Regularización de naves menores.</li><li>Manuales de estabilidad.</li><li>Certificaciones ante autoridad marítima.</li><li>Documentación técnica.</li><li>Expedientes marítimos.</li></ul>
-      </div>
-      <div class="service">
-        <div class="service-num">03</div><h3>Operaciones Marítimas</h3>
-        <ul><li>Cálculos de remolque.</li><li>Cálculos de fondeo.</li><li>Pruebas de tracción.</li><li>Informes técnicos especializados.</li><li>Apoyo a maniobras especiales.</li></ul>
-      </div>
-    </div>
-    <div class="special-grid">
-      <div class="special-card">
-        <h3>Inspección y Medición de Espesores</h3>
-        <p>Evaluación técnica de estructuras navales mediante inspección y medición de espesores por ultrasonido.</p>
-        <ul><li>Inspección de cascos y estructuras.</li><li>Medición de espesores.</li><li>Informes técnicos de condición estructural.</li></ul>
-      </div>
-      <div class="special-card">
-        <h3>Inspección de Centros de Cultivo</h3>
-        <p>Apoyo técnico para la industria acuícola mediante inspección de infraestructura flotante y operaciones asociadas.</p>
-        <ul><li>Evaluación de infraestructura marítima.</li><li>Inspección de elementos flotantes y fondeo.</li><li>Informes técnicos y recomendaciones.</li></ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="light" id="resultados">
-  <div class="container">
-    <div class="results-head"><div class="kicker">Resultados de ingeniería</div><h2>Proyectos que avanzan con respaldo técnico</h2></div>
-    <div class="results-grid">
-      <article class="result-card"><img src="assets/resultado-artefacto.jpg" alt="Artefacto naval de acero"><div class="result-body"><div class="symbol">▱</div><div><h3>Artefacto Naval de Acero</h3><p>Desarrollo estructural y documentación técnica.</p></div></div></article>
-      <article class="result-card"><img src="assets/resultado-barcaza.jpg" alt="Barcaza de acero"><div class="result-body"><div class="symbol">▰</div><div><h3>Barcaza de Servicio Marítimo</h3><p>Diseño naval, cálculos estructurales y documentación para operación.</p></div></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="operations" id="operaciones">
-  <div class="container">
-    <div class="operations-box">
-      <div class="kicker">Operaciones marítimas</div>
-      <h2>Soluciones técnicas para <span>operaciones marítimas.</span></h2>
-      <ul class="check-list"><li>Remolque y fondeo.</li><li>Pruebas de tracción.</li><li>Informes técnicos especializados.</li><li>Inspecciones en terreno.</li><li>Apoyo a maniobras y operaciones especiales.</li></ul>
-    </div>
-  </div>
-</section>
-
-<section class="clients">
-  <div class="container">
-    <div class="kicker">Trabajamos con</div>
-    <div class="clients-grid">
-      <div class="client"><span>▰</span>Armadores</div><div class="client"><span>≋</span>Empresas acuícolas</div><div class="client"><span>⚓</span>Operadores marítimos</div><div class="client"><span>▥</span>Empresas portuarias</div><div class="client"><span>▱</span>Astilleros</div>
-    </div>
-  </div>
-</section>
-
-<section class="precontact">
-  <div class="container">
-    <div class="kicker">Por qué trabajar con CAUVA</div>
-    <h2>Ingeniería aplicada a proyectos reales.</h2>
-    <div class="value-grid">
-      <div class="value"><strong>Ingeniería Técnica</strong>Diseño, cálculo y documentación para proyectos marítimos.</div>
-      <div class="value"><strong>Experiencia en Terreno</strong>Apoyo en operaciones, inspecciones y maniobras marítimas.</div>
-      <div class="value"><strong>Industria Acuícola</strong>Inspección de centros de cultivo e infraestructura marítima.</div>
-      <div class="value"><strong>Cumplimiento Normativo</strong>Regularización, certificación y expedientes técnicos.</div>
-    </div>
-  </div>
-</section>
-
-<section class="contact" id="contacto">
-  <div class="container contact-grid">
-    <div class="contact-card">
-      <div class="kicker">Contacto</div>
-      <h2>¿Tiene un proyecto marítimo?</h2>
-      <p class="intro">Desarrollamos soluciones de ingeniería naval, certificación, inspecciones técnicas y apoyo especializado para la industria marítima y acuícola.</p>
-      <div class="contact-item"><strong>Juan Carlos Caullán</strong><br>Representante</div>
-      <div class="contact-item"><strong>Correo</strong><br>jcaullan@cauva.cl</div>
-      <div class="contact-item"><strong>Teléfono / WhatsApp</strong><br>+56 9 7448 2649</div>
-      <div class="contact-item"><strong>Ubicación</strong><br>Puerto Montt | Concepción</div>
-    </div>
-    <div class="cta-box">
-      <h2>Conversemos.</h2>
-      <p>Cuéntenos su requerimiento técnico y le orientaremos con una solución adecuada para su proyecto marítimo.</p>
-      <div class="cta-actions"><a class="btn" href="mailto:jcaullan@cauva.cl">Enviar correo →</a><a class="btn dark" href="https://wa.me/56974482649" target="_blank">WhatsApp →</a></div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div><strong>CAUVA SpA</strong> · Ingeniería Naval · Certificación · Operaciones Marítimas</div>
-    <div>jcaullan@cauva.cl · +56 9 7448 2649</div>
-    <div>© 2025 CAUVA SpA · Todos los derechos reservados.</div>
-  </div>
-</footer>
-<a class="whatsapp" href="https://wa.me/56974482649" target="_blank" aria-label="WhatsApp">☎</a>
-</body>
-</html>
+<header class="hero" id="inicio"><div class="container"><nav><a class="brand" href="#inicio">CAUVA<small>INGENIERÍA NAVAL</small></a><div class="menu"><a href="#servicios">Servicios</a><a href="#diseno">Diseño 3D</a><a href="#proyectos">Proyectos</a><a href="#especializados">Especializados</a><a href="#contacto" class="navcta">Cotizar</a></div></nav><div class="hero-content"><div class="eyebrow">Puerto Montt | Concepción</div><h1>Ingeniería Naval <span>para la Industria Marítima</span></h1><div class="hero-sub">Diseño · Ingeniería · Certificación · Inspección · Operaciones</div><p>Desarrollamos soluciones técnicas para embarcaciones, artefactos navales, centros de cultivo y operaciones marítimas especializadas.</p><div class="actions"><a class="btn" href="#proyectos">Ver proyectos →</a><a class="btn outline" href="#contacto">Solicitar cotización →</a></div><div class="tags"><span>Diseño 3D</span><span>Experimento de Inclinación</span><span>Medición de Espesores</span><span>Centros de Cultivo</span></div></div></div></header>
+<section class="light" id="nosotros"><div class="container about"><div><div class="eyebrow">Quiénes somos</div><h2>Ingeniería aplicada al mundo marítimo.</h2><p>CAUVA SpA es una empresa chilena especializada en ingeniería naval, diseño de embarcaciones, certificación marítima, inspección técnica y apoyo operacional.</p><p>Desarrollamos proyectos desde la ingeniería conceptual hasta la construcción y puesta en servicio, entregando soluciones técnicas adaptadas a las necesidades de cada cliente.</p><a class="btn" href="#servicios">Conocer servicios →</a></div><div class="photo-frame"><img src="assets/about.jpg" alt="Proyecto naval CAUVA"><div class="photo-label">Ingeniería aplicada · Operación en terreno</div></div></div></section>
+<section class="dark" id="servicios"><div class="container"><div class="center"><div class="eyebrow">Servicios</div><h2>Soluciones para cada etapa del proyecto</h2><p>Ingeniería, documentación, inspecciones y apoyo operacional para proyectos navales, marítimos y acuícolas.</p></div><div class="services"><div class="service"><div class="num">01</div><h3>Ingeniería Naval</h3><ul><li>Diseño de embarcaciones.</li><li>Cálculos estructurales.</li><li>Escantillones.</li><li>Planos de construcción.</li><li>Ingeniería de detalle.</li></ul></div><div class="service"><div class="num">02</div><h3>Certificación Marítima</h3><ul><li>Expedientes técnicos.</li><li>Manuales de estabilidad.</li><li>Documentación para autoridad marítima.</li><li>Regularización de embarcaciones.</li><li>Informes técnicos.</li></ul></div><div class="service"><div class="num">03</div><h3>Operaciones Marítimas</h3><ul><li>Remolques y fondeos.</li><li>Pruebas de tracción.</li><li>Inspecciones operacionales.</li><li>Apoyo a maniobras.</li><li>Puestas en servicio.</li></ul></div></div><div class="special-grid"><div class="special-card"><div class="num">04</div><h3>Medición de Espesores</h3><p>Inspección mediante ultrasonido para cascos, cubiertas, estanques y estructuras navales.</p></div><div class="special-card"><div class="num">05</div><h3>Centros de Cultivo</h3><p>Inspección técnica de pontones, plataformas, embarcaciones de apoyo e infraestructura flotante.</p></div><div class="special-card"><div class="num">06</div><h3>Experimento de Inclinación</h3><p>Ensayos para determinar desplazamiento, centro de gravedad KG y estabilidad inicial.</p></div></div></div></section>
+<section class="design" id="diseno"><div class="container design-grid"><div><div class="eyebrow">Ingeniería y Diseño 3D</div><h2>Transformamos ideas en embarcaciones reales.</h2><p>Desarrollamos modelos tridimensionales para validar diseños antes de la construcción, optimizando tiempos, costos, disposición general y desempeño operacional.</p><ul><li>Diseño conceptual.</li><li>Modelado 3D naval.</li><li>Ingeniería estructural.</li><li>Diseño de casco.</li><li>Integración de equipos y sistemas.</li><li>Planos constructivos y documentación técnica.</li></ul></div><div class="render-mosaic"><img class="wide" src="assets/render-red-1.jpg" alt="Modelo 3D catamarán"><img src="assets/render-structure-1.jpg" alt="Estructura 3D catamarán"><img src="assets/render-blue-1.jpg" alt="Modelo 3D embarcación de servicio"></div></div></section>
+<section class="projects" id="proyectos"><div class="container"><div class="center"><div class="eyebrow">Proyectos destacados</div><h2>Ingeniería desarrollada por CAUVA</h2><p>Proyectos reales desarrollados con respaldo técnico, documentación de ingeniería y experiencia aplicada en terreno.</p></div><div class="project-grid"><article class="project"><img src="assets/catamaran-real.jpg" alt="Catamarán en construcción"><div class="project-info"><div class="label">Proyecto 01</div><h3>Catamarán Multipropósito</h3><p>Ingeniería estructural, planos constructivos, escantillones y apoyo técnico para construcción de catamarán destinado a operaciones marítimas.</p></div></article><article class="project"><img src="assets/barcaza-real.jpg" alt="Barcaza en construcción"><div class="project-info"><div class="label">Proyecto 02</div><h3>Barcaza de Servicio Marítimo</h3><p>Ingeniería integral, planos estructurales, documentación técnica, regularización marítima y antecedentes para operación.</p></div></article><article class="project"><img src="assets/artefacto.jpg" alt="Artefacto naval"><div class="project-info"><div class="label">Proyecto 03</div><h3>Artefacto Naval de Acero</h3><p>Desarrollo estructural, apoyo documental y soporte técnico para proyecto marítimo industrial.</p></div></article><article class="project"><img src="assets/barcaza.jpg" alt="Proyecto naval"><div class="project-info"><div class="label">Proyecto 04</div><h3>Proyecto Naval Especial</h3><p>Diseño naval, cálculos estructurales, planos y documentación técnica para construcción y operación.</p></div></article></div></div></section>
+<section class="specialized" id="especializados"><div class="container"><div class="center"><div class="eyebrow">Servicios especializados</div><h2>Experiencia técnica aplicada en terreno</h2><p>Servicios de alto valor para certificación, evaluación estructural, estabilidad y operación marítima.</p></div><div class="spec-row"><img src="assets/inclination-1.jpg" alt="Experimento de inclinación"><div class="spec-box"><div class="eyebrow">Estabilidad</div><h3>Experimento de Inclinación</h3><p>Realización de ensayos para determinar centro de gravedad KG, desplazamiento y estabilidad inicial de embarcaciones nuevas o modificadas.</p><ul><li>Planificación del ensayo.</li><li>Distribución y control de pesos.</li><li>Medición de escoras.</li><li>Informe técnico y apoyo a certificación.</li></ul></div></div><div class="spec-row"><div class="spec-box"><div class="eyebrow">Inspección estructural</div><h3>Medición de Espesores</h3><p>Evaluación de condición estructural mediante medición de espesores por ultrasonido en cascos, cubiertas, estanques y estructuras navales.</p><ul><li>Mapeo de espesores.</li><li>Diagnóstico estructural.</li><li>Informe técnico.</li><li>Recomendaciones de reparación.</li></ul></div><img src="assets/inclination-2.jpg" alt="Inspección técnica marítima"></div><div class="spec-row"><img src="assets/operaciones.jpg" alt="Inspección centros de cultivo"><div class="spec-box"><div class="eyebrow">Industria acuícola</div><h3>Inspección de Centros de Cultivo</h3><p>Evaluación técnica de pontones, plataformas, embarcaciones de apoyo, infraestructura flotante y operaciones asociadas a centros de cultivo.</p><ul><li>Inspección estructural.</li><li>Evaluación operacional.</li><li>Revisión de elementos flotantes y fondeo.</li><li>Informes técnicos y recomendaciones.</li></ul></div></div></div></section>
+<section class="operations"><div class="container"><div class="operations-box"><div class="eyebrow">Operaciones marítimas</div><h2>Soluciones técnicas para <span>operaciones en terreno.</span></h2><ul><li>Remolque y fondeo.</li><li>Pruebas de tracción.</li><li>Informes técnicos especializados.</li><li>Inspecciones en terreno.</li><li>Apoyo a maniobras y operaciones especiales.</li></ul></div></div></section>
+<section class="value"><div class="container"><div class="eyebrow">Nuestra diferencia</div><h2>Ingeniería aplicada a proyectos reales.</h2><div class="value-grid"><div class="value-card"><strong>Experiencia real</strong><p>Participación directa en proyectos de ingeniería, construcción naval y operación marítima.</p></div><div class="value-card"><strong>Soluciones integrales</strong><p>Desde la idea inicial hasta la certificación, documentación y puesta en servicio.</p></div><div class="value-card"><strong>Ingeniería aplicada</strong><p>Diseños desarrollados con criterio constructivo y experiencia operacional.</p></div><div class="value-card"><strong>Compromiso técnico</strong><p>Proyectos desarrollados bajo criterios normativos y buenas prácticas de ingeniería.</p></div></div></div></section>
+<section class="gallery"><div class="container"><div class="eyebrow">Galería</div><h2>Diseño, construcción e inspección</h2><div class="gallery-grid"><img src="assets/render-red-2.jpg" alt=""><img src="assets/render-structure-2.jpg" alt=""><img src="assets/render-blue-2.jpg" alt=""><img src="assets/inclination-3.jpg" alt=""><img src="assets/catamaran-real.jpg" alt=""><img src="assets/barcaza-real.jpg" alt=""><img src="assets/artefacto.jpg" alt=""><img src="assets/operaciones.jpg" alt=""></div></div></section>
+<section class="contact" id="contacto"><div class="container contact-grid"><div class="contact-card"><div class="eyebrow">Contacto</div><h2>Construyamos su próximo proyecto.</h2><p>Cuéntenos su requerimiento técnico y le orientaremos con una solución adecuada para su proyecto marítimo.</p><div class="contact-item"><strong>Juan Carlos Caullán</strong><br>Representante</div><div class="contact-item"><strong>Correo</strong><br>jcaullan@cauva.cl</div><div class="contact-item"><strong>Teléfono / WhatsApp</strong><br>+56 9 7448 2649</div><div class="contact-item"><strong>Ubicación</strong><br>Puerto Montt | Concepción</div></div><div class="cta-box"><h3>CAUVA Ingeniería Naval</h3><p>Diseño · Certificación · Inspección · Operaciones Marítimas</p><div class="cta-actions"><a class="btn" href="mailto:jcaullan@cauva.cl">Enviar correo →</a><a class="btn outline" href="https://wa.me/56974482649" target="_blank">WhatsApp →</a></div></div></div></section>
+<footer><div class="container"><div><strong>CAUVA SpA</strong> · Ingeniería Naval · Certificación · Operaciones Marítimas</div><div>jcaullan@cauva.cl · +56 9 7448 2649</div><div>© 2025 CAUVA SpA · Todos los derechos reservados.</div></div></footer><a class="whatsapp" href="https://wa.me/56974482649" target="_blank">☎</a>
+</body></html>

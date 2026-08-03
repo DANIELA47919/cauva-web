@@ -30,3 +30,10 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 document.getElementById('year').textContent = new Date().getFullYear();
+
+document.querySelectorAll('video').forEach(video => {
+  video.loop = false;
+  video.addEventListener('ended', () => {
+    video.pause();
+  });
+});

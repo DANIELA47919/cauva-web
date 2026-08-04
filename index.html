@@ -4,19 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>CAUVA | Ingeniería Naval y Operaciones Marítimas</title>
-  <meta name="description" content="Ingeniería naval, certificación, inspección y operaciones marítimas para embarcaciones, artefactos navales y centros de cultivo.">
+  <meta name="description" content="Ingeniería naval, certificación, inspecciones y operaciones marítimas para embarcaciones, artefactos navales y centros de cultivo.">
   <meta name="theme-color" content="#061523">
   <meta property="og:title" content="CAUVA | Ingeniería Naval">
   <meta property="og:description" content="Soluciones técnicas para proyectos marítimos.">
   <meta property="og:image" content="https://cauva.cl/assets/img/hero.jpeg">
   <link rel="icon" href="assets/img/logo-original.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-v4.css?v=4">
 </head>
 <body>
-
-<div class="splash" aria-hidden="true">
-  <img src="assets/img/logo-transparente.png" alt="">
-</div>
 
 <header class="header">
   <div class="container header-inner">
@@ -28,13 +24,13 @@
       <a href="#caso">Caso de éxito</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <a class="header-contact" href="https://wa.me/56962757559?text=Hola%20CAUVA,%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener">Contáctanos</a>
+    <a class="header-whatsapp" href="https://wa.me/56962757559?text=Hola%20CAUVA,%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a>
   </div>
 </header>
 
 <main>
 <section class="hero">
-  <img src="assets/img/hero.jpeg" alt="Cubierta de embarcación durante experimento de inclinación">
+  <img src="assets/img/hero.jpeg" alt="Experimento de inclinación realizado a bordo">
   <div class="hero-overlay"></div>
   <div class="container hero-content">
     <p class="eyebrow">Ingeniería naval y operaciones marítimas</p>
@@ -45,15 +41,14 @@
       <button class="button secondary open-quote" type="button">Solicitar cotización</button>
     </div>
   </div>
-  <a class="scroll-hint" href="#nosotros">Desliza para descubrir ↓</a>
 </section>
 
-<section class="confidence">
-  <div class="container confidence-grid">
-    <span>Ingeniería aplicada</span>
-    <span>Documentación técnica</span>
-    <span>Inspección en terreno</span>
-    <span>Apoyo operacional</span>
+<section class="value-strip">
+  <div class="container value-grid">
+    <div><strong>Diseño</strong><span>Ingeniería y modelado naval</span></div>
+    <div><strong>Documentación</strong><span>Planos e informes técnicos</span></div>
+    <div><strong>Inspección</strong><span>Evaluación en terreno</span></div>
+    <div><strong>Operación</strong><span>Apoyo técnico marítimo</span></div>
   </div>
 </section>
 
@@ -69,12 +64,12 @@
   </div>
 </section>
 
-<section id="servicios" class="section white services-section">
+<section id="servicios" class="section services-section">
   <div class="container">
     <div class="section-heading reveal">
       <div>
         <p class="eyebrow">Nuestros servicios</p>
-        <h2>Ingeniería que impulsa cada etapa del proyecto.</h2>
+        <h2>Ingeniería para cada etapa del proyecto.</h2>
       </div>
       <p>Selecciona un área para conocer su alcance.</p>
     </div>
@@ -103,6 +98,7 @@
           </div>
           <img src="assets/img/render-1.png" alt="Modelo 3D de embarcación">
         </article>
+
         <article class="service-panel" id="cert">
           <div>
             <p class="eyebrow">Certificaciones</p>
@@ -116,6 +112,7 @@
           </div>
           <img src="assets/img/grua.jpeg" alt="Equipo de izaje a bordo">
         </article>
+
         <article class="service-panel" id="insp">
           <div>
             <p class="eyebrow">Inspecciones</p>
@@ -129,6 +126,7 @@
           </div>
           <img src="assets/img/inclinacion-3.jpeg" alt="Inspección técnica">
         </article>
+
         <article class="service-panel" id="ops">
           <div>
             <p class="eyebrow">Operaciones Marítimas</p>
@@ -137,11 +135,11 @@
               <li>Cálculo para faenas de remolque</li>
               <li>Bollard Pull</li>
               <li>Pruebas de tracción</li>
-              
             </ul>
           </div>
           <img src="assets/img/artefacto.jpg" alt="Operación marítima">
         </article>
+
         <article class="service-panel" id="model">
           <div>
             <p class="eyebrow">Modelado 3D</p>
@@ -169,6 +167,7 @@
       </div>
       <p>Ingeniería desarrollada para necesidades reales de operación y construcción.</p>
     </div>
+
     <div class="project-grid">
       <article class="project project-large reveal">
         <img src="assets/img/catamaran.jpg" alt="Catamarán multipropósito">
@@ -208,11 +207,11 @@
 </section>
 
 <section id="contacto" class="contact">
-  <div class="container contact-grid contact-clean">
+  <div class="container contact-clean">
     <div>
-      <p class="eyebrow">Contacto</p>
+      <p class="eyebrow contact-eyebrow">Contacto</p>
       <h2>Hablemos de tu proyecto.</h2>
-      <p class="contact-subtitle">Cuéntanos tu necesidad y te responderemos a la brevedad.</p>
+      <p>Cuéntanos tu necesidad y te responderemos a la brevedad.</p>
     </div>
     <div class="contact-actions">
       <a class="button dark-button" href="https://wa.me/56962757559?text=Hola%20CAUVA,%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a>
@@ -228,15 +227,19 @@
     <button class="modal-close" type="button" aria-label="Cerrar">×</button>
     <p class="eyebrow">Solicitud de cotización</p>
     <h2 id="quote-title">Cuéntanos qué necesitas.</h2>
-    <form action="https://formsubmit.co/dmuno@cauva.cl" method="POST">
+
+    <form action="https://formsubmit.co/dmunoz@cauva.cl" method="POST">
       <input type="hidden" name="_subject" value="Nueva solicitud de cotización desde cauva.cl">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://cauva.cl/?cotizacion=enviada">
 
-      <label>Nombre completo<input type="text" name="Nombre" required></label>
-      <label>RUT<input type="text" name="RUT" required placeholder="12.345.678-9"></label>
-      <label>Servicio requerido
+      <label>Nombre o empresa<input type="text" name="Nombre o empresa" required></label>
+      <label>RUT<input type="text" name="RUT" placeholder="12.345.678-9"></label>
+      <label>Correo electrónico<input type="email" name="Correo" required></label>
+      <label>Número de contacto<input type="tel" name="Número de contacto" required></label>
+
+      <label class="full">Servicio requerido
         <select name="Servicio requerido" required>
           <option value="" selected disabled>Seleccionar</option>
           <option>Ingeniería Naval</option>
@@ -257,8 +260,8 @@
           <option>Otro</option>
         </select>
       </label>
-      <label>Número de contacto<input type="tel" name="Número de contacto" required></label>
-      <label class="full">Detalles adicionales<textarea name="Detalles adicionales" rows="4"></textarea></label>
+
+      <label class="full">Detalle del requerimiento<textarea name="Detalle del requerimiento" rows="4"></textarea></label>
       <button class="button primary full" type="submit">Enviar solicitud</button>
     </form>
   </div>
@@ -270,6 +273,6 @@
 </div>
 
 <footer><div class="container">© <span id="year"></span> CAUVA SpA · Ingeniería Naval y Operaciones Marítimas</div></footer>
-<script src="script.js"></script>
+<script src="script-v4.js?v=4"></script>
 </body>
 </html>

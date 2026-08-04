@@ -1,21 +1,31 @@
-# CAUVA Web actualizada
+# CAUVA Web V4 limpia
 
-Cambios:
-- Eliminado “Fondeo y apoyo operacional”.
-- Eliminado por completo el nombre del representante.
-- Eliminado el cargo del representante.
-- Eliminado el correo del representante.
-- Franja de contacto simplificada:
-  - WhatsApp
-  - Solicitar cotización
-- El formulario continúa enviando a dmunoz@cauva.cl.
-- WhatsApp continúa conectado al +56 9 6275 7559.
+## No necesitas borrar los archivos anteriores
+Esta versión usa:
+- styles-v4.css
+- script-v4.js
+
+El index.html solo cargará esos archivos. Los archivos antiguos pueden permanecer en GitHub sin afectar la web.
 
 ## Publicar
 1. Descomprime este ZIP.
-2. Sube todo el contenido al repositorio `DANIELA47919/cauva-web`.
-3. Reemplaza los archivos anteriores.
-4. Confirma con `Commit changes`.
-5. Espera unos minutos y abre https://cauva.cl
+2. En GitHub abre `DANIELA47919/cauva-web`.
+3. Pulsa Add file → Upload files.
+4. Arrastra TODO el contenido descomprimido.
+5. Acepta reemplazar index.html, README.md y CNAME.
+6. Confirma con Commit changes.
+7. Espera entre 1 y 5 minutos.
+8. Abre https://cauva.cl/?v=4
+9. Si fuera necesario, presiona Ctrl + F5.
+
+## Incluye
+- Sin logo gigante.
+- Sin animación de logo.
+- Sin nombre, cargo ni correo de representante.
+- Sin “Fondeo y apoyo operacional”.
+- WhatsApp +56 9 6275 7559.
+- Formulario enviado a dmunoz@cauva.cl.
+- Servicios en pestañas.
+- Diseño responsive.
 
 No modifiques los DNS.

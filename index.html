@@ -10,7 +10,7 @@
   <meta property="og:description" content="Soluciones técnicas para proyectos marítimos.">
   <meta property="og:image" content="https://cauva.cl/assets/img/hero.jpeg">
   <link rel="icon" href="assets/img/logo-original.png">
-  <link rel="stylesheet" href="styles-v4.css?v=4">
+  <link rel="stylesheet" href="styles-v6.css?v=6">
 </head>
 <body>
 
@@ -30,8 +30,11 @@
 
 <main>
 <section class="hero">
-  <img src="assets/img/hero.jpeg" alt="Experimento de inclinación realizado a bordo">
+  <img src="assets/img/hero-astillero.jpg" alt="Vista aérea de embarcaciones en construcción en astillero">
   <div class="hero-overlay"></div>
+  <div class="hero-logo-watermark" aria-hidden="true">
+    <img src="assets/img/logo-v5.png" alt="">
+  </div>
   <div class="container hero-content">
     <p class="eyebrow">Ingeniería naval y operaciones marítimas</p>
     <h1>Soluciones técnicas para proyectos marítimos.</h1>
@@ -96,7 +99,7 @@
               <li>Manual de sujeción de carga</li>
             </ul>
           </div>
-          <img src="assets/img/render-1.png" alt="Modelo 3D de embarcación">
+          <img class="zoomable" src="assets/img/render-1.png" alt="Modelo 3D de embarcación">
         </article>
 
         <article class="service-panel" id="cert">
@@ -110,7 +113,7 @@
               <li>Estructuras de centros de cultivo</li>
             </ul>
           </div>
-          <img src="assets/img/grua.jpeg" alt="Equipo de izaje a bordo">
+          <img class="zoomable" src="assets/img/grua.jpeg" alt="Equipo de izaje a bordo">
         </article>
 
         <article class="service-panel" id="insp">
@@ -124,7 +127,7 @@
               <li>Informes de condición</li>
             </ul>
           </div>
-          <img src="assets/img/inclinacion-3.jpeg" alt="Inspección técnica">
+          <img class="zoomable" src="assets/img/inclinacion-3.jpeg" alt="Inspección técnica">
         </article>
 
         <article class="service-panel" id="ops">
@@ -137,7 +140,7 @@
               <li>Pruebas de tracción</li>
             </ul>
           </div>
-          <img src="assets/img/artefacto.jpg" alt="Operación marítima">
+          <img class="zoomable" src="assets/img/artefacto.jpg" alt="Operación marítima">
         </article>
 
         <article class="service-panel" id="model">
@@ -151,7 +154,7 @@
               <li>Planos de fabricación</li>
             </ul>
           </div>
-          <img src="assets/img/render-2.jpeg" alt="Modelo tridimensional naval">
+          <img class="zoomable" src="assets/img/render-2.jpeg" alt="Modelo tridimensional naval">
         </article>
       </div>
     </div>
@@ -170,15 +173,15 @@
 
     <div class="project-grid">
       <article class="project project-large reveal">
-        <img src="assets/img/catamaran.jpg" alt="Catamarán multipropósito">
+        <img class="zoomable" src="assets/img/catamaran.jpg" alt="Catamarán multipropósito">
         <div><small>Proyecto 01</small><h3>Catamarán multipropósito</h3><p>Ingeniería estructural, planos constructivos y apoyo técnico.</p></div>
       </article>
       <article class="project reveal">
-        <img src="assets/img/barcaza.jpg" alt="Barcaza en construcción">
+        <img class="zoomable" src="assets/img/barcaza.jpg" alt="Barcaza en construcción">
         <div><small>Proyecto 02</small><h3>Barcaza de servicio</h3><p>Planos estructurales y documentación para su habilitación operacional.</p></div>
       </article>
       <article class="project reveal">
-        <img src="assets/img/casco.png" alt="Inspección de casco">
+        <img class="zoomable" src="assets/img/casco.png" alt="Inspección de casco">
         <div><small>Proyecto 03</small><h3>Inspección de casco</h3><p>Participación en terreno, análisis de registros e informe técnico.</p></div>
       </article>
     </div>
@@ -198,10 +201,10 @@
       </ul>
     </div>
     <div class="case-gallery reveal">
-      <img src="assets/img/inclinacion-1.jpeg" alt="Experimento de inclinación">
-      <img src="assets/img/inclinacion-2.jpeg" alt="Pesos de prueba">
-      <img src="assets/img/inclinacion-4.jpeg" alt="Evaluación en cubierta">
-      <img src="assets/img/inclinacion-6.jpeg" alt="Distribución de pesos">
+      <img class="zoomable" src="assets/img/inclinacion-1.jpeg" alt="Experimento de inclinación">
+      <img class="zoomable" src="assets/img/inclinacion-2.jpeg" alt="Pesos de prueba">
+      <img class="zoomable" src="assets/img/inclinacion-4.jpeg" alt="Evaluación en cubierta">
+      <img class="zoomable" src="assets/img/inclinacion-6.jpeg" alt="Distribución de pesos">
     </div>
   </div>
 </section>
@@ -268,11 +271,16 @@
 </div>
 
 <div class="lightbox" aria-hidden="true">
-  <button class="lightbox-close" type="button">×</button>
-  <img src="" alt="">
+  <button class="lightbox-close" type="button" aria-label="Cerrar imagen">×</button>
+  <button class="lightbox-prev" type="button" aria-label="Imagen anterior">←</button>
+  <figure class="lightbox-content">
+    <img src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button class="lightbox-next" type="button" aria-label="Imagen siguiente">→</button>
 </div>
 
 <footer><div class="container">© <span id="year"></span> CAUVA SpA · Ingeniería Naval y Operaciones Marítimas</div></footer>
-<script src="script-v4.js?v=4"></script>
+<script src="script-v6.js?v=6"></script>
 </body>
 </html>

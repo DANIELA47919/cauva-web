@@ -1,31 +1,26 @@
-# CAUVA Web V4 limpia
+# CAUVA Web V6 — Galería ampliable
 
-## No necesitas borrar los archivos anteriores
-Esta versión usa:
-- styles-v4.css
-- script-v4.js
+## Nuevo
+- Las imágenes de servicios, proyectos y caso de éxito se pueden abrir en grande.
+- Navegación con flechas.
+- Teclas izquierda y derecha.
+- Cierre con X, tecla Esc o clic fuera de la imagen.
+- Deslizamiento táctil en celulares.
+- Texto descriptivo bajo cada imagen.
 
-El index.html solo cargará esos archivos. Los archivos antiguos pueden permanecer en GitHub sin afectar la web.
-
-## Publicar
-1. Descomprime este ZIP.
-2. En GitHub abre `DANIELA47919/cauva-web`.
-3. Pulsa Add file → Upload files.
-4. Arrastra TODO el contenido descomprimido.
-5. Acepta reemplazar index.html, README.md y CNAME.
-6. Confirma con Commit changes.
-7. Espera entre 1 y 5 minutos.
-8. Abre https://cauva.cl/?v=4
-9. Si fuera necesario, presiona Ctrl + F5.
-
-## Incluye
-- Sin logo gigante.
-- Sin animación de logo.
-- Sin nombre, cargo ni correo de representante.
-- Sin “Fondeo y apoyo operacional”.
+## Se mantiene
+- Portada aérea del astillero.
+- Logo CAUVA difuminado.
 - WhatsApp +56 9 6275 7559.
 - Formulario enviado a dmunoz@cauva.cl.
-- Servicios en pestañas.
-- Diseño responsive.
+- Sin datos personales del representante.
+
+## Publicar
+1. Descomprime el ZIP.
+2. Sube todo el contenido a `DANIELA47919/cauva-web`.
+3. Confirma con Commit changes.
+4. Espera unos minutos.
+5. Abre https://cauva.cl/?v=6
+6. Si fuera necesario, presiona Ctrl + F5.
 
 No modifiques los DNS.

@@ -141,3 +141,28 @@ body.modal-open{overflow:hidden}
   .hero-content{opacity:1;transform:none}
   .reveal{opacity:1;transform:none}
 }
+
+
+/* Contacto limpio, sin datos personales */
+.contact-clean{
+  grid-template-columns:1fr auto;
+  align-items:center;
+}
+.contact-clean .contact-subtitle{
+  margin:12px 0 0;
+  max-width:540px;
+  color:#102131;
+  line-height:1.6;
+}
+.contact-clean .contact-actions{
+  margin:0;
+  justify-content:flex-end;
+}
+@media(max-width:920px){
+  .contact-clean{
+    grid-template-columns:1fr;
+  }
+  .contact-clean .contact-actions{
+    justify-content:flex-start;
+  }
+}

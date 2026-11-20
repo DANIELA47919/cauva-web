@@ -1,0 +1,93 @@
+CAUVA V10 · ARCHIVOS DE VERSIONES ANTERIORES QUE DEBEN ELIMINARSE DEL REPOSITORIO
+
+La V10 no usa ninguno de estos archivos. "Add files via upload" agrega y reemplaza,
+pero no borra: si quedan, siguen visibles en cauva.cl aunque la página no los muestre
+(varios tienen rostros de personas, el nombre de un buque o una dirección estampada).
+
+Forma más simple (recomendada):
+  1. Descarga un respaldo del repositorio (Code > Download ZIP).
+  2. Borra todo excepto CNAME.
+  3. Sube el contenido de cauva-web-v10.zip.
+
+Lista (79 archivos):
+assets/about.jpg
+assets/artefacto.jpg
+assets/barcaza-real.jpg
+assets/barcaza.jpg
+assets/catamaran-real.jpg
+assets/contacto.jpg
+assets/hero.jpg
+assets/img/artefacto.jpg
+assets/img/barcaza-construccion.jpg
+assets/img/barcaza.jpg
+assets/img/carga-cubierta-1.jpeg
+assets/img/carga-cubierta-2.jpeg
+assets/img/carga-cubierta-3.jpeg
+assets/img/casco.png
+assets/img/catamaran-construccion.jpg
+assets/img/catamaran.jpg
+assets/img/equipo-terreno.jpg
+assets/img/equipo.jpeg
+assets/img/equipo.jpg
+assets/img/estructura-naval.jpg
+assets/img/grua.jpeg
+assets/img/hero-astillero.jpg
+assets/img/hero-mar.jpg
+assets/img/hero.jpeg
+assets/img/hero.jpg
+assets/img/inclinacion-1.jpeg
+assets/img/inclinacion-2.jpeg
+assets/img/inclinacion-3.jpeg
+assets/img/inclinacion-4.jpeg
+assets/img/inclinacion-5.jpeg
+assets/img/inclinacion-6.jpeg
+assets/img/inspeccion-casco-limpia.png
+assets/img/inspeccion-casco-original.jpeg
+assets/img/inspeccion-cubierta-1.jpeg
+assets/img/inspeccion-equipo-1.jpeg
+assets/img/inspeccion-equipo-2.jpeg
+assets/img/inspeccion-grua.jpeg
+assets/img/logo-cauva.png
+assets/img/logo-original.png
+assets/img/logo-transparente.png
+assets/img/logo-v5.png
+assets/img/logo.png
+assets/img/modelo-naval.jpg
+assets/img/operacion-mar-1.jpeg
+assets/img/operacion-mar-2.jpeg
+assets/img/operacion-mar-3.jpeg
+assets/img/render-1.png
+assets/img/render-2.jpeg
+assets/img/render-3.jpeg
+assets/img/render-4.jpeg
+assets/img/render-catamaran-azul.png
+assets/img/render-embarcacion-roja.jpeg
+assets/img/render-estructural-1.jpeg
+assets/img/render-estructural-2.jpeg
+assets/inclination-1.jpg
+assets/inclination-2.jpg
+assets/inclination-3.jpg
+assets/ingenieria-naval.jpg
+assets/operaciones.jpg
+assets/quienes-somos.jpg
+assets/regularizacion.jpg
+assets/render-blue-1.jpg
+assets/render-blue-2.jpg
+assets/render-red-1.jpg
+assets/render-red-2.jpg
+assets/render-structure-1.jpg
+assets/render-structure-2.jpg
+assets/resultado-artefacto.jpg
+assets/resultado-barcaza.jpg
+assets/video/operacion-1.mp4
+assets/video/operacion-2.mp4
+script-v4.js
+script-v6.js
+script-v7.js
+script.js
+styles-v4.css
+styles-v6.css
+styles-v7.css
+styles.css
+
+Nota: aunque se eliminen, siguen en el historial público del repositorio.

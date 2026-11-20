@@ -2,295 +2,737 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>CAUVA | Ingeniería Naval y Operaciones Marítimas</title>
-  <meta name="description" content="Ingeniería naval, certificación, inspecciones y operaciones marítimas para embarcaciones, artefactos navales y centros de cultivo.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAUVA | Ingeniería que resuelve · Ingeniería naval y operaciones marítimas</title>
+  <meta name="description" content="CAUVA SpA: ingeniería naval, planos, cálculos estructurales, estudios de estabilidad, arqueo, certificaciones, inspecciones técnicas, operaciones marítimas, Bollard Pull y modelado 3D.">
   <meta name="theme-color" content="#061523">
-  <meta property="og:title" content="CAUVA | Ingeniería Naval">
-  <meta property="og:description" content="Soluciones que mantienen el mundo en movimiento.">
-  <meta property="og:image" content="https://cauva.cl/assets/img/hero.jpeg">
-  <link rel="icon" href="assets/img/logo-original.png">
-  <link rel="stylesheet" href="styles-v6.css?v=6">
-  <link rel="stylesheet" href="styles-v7.css?v=7">
+  <link rel="canonical" href="https://cauva.cl/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="CAUVA SpA">
+  <meta property="og:url" content="https://cauva.cl/">
+  <meta property="og:title" content="CAUVA | Ingeniería que resuelve">
+  <meta property="og:description" content="Soluciones eficientes para desafíos navales y marítimos.">
+  <meta property="og:image" content="https://cauva.cl/assets/brand/og-cauva.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo de CAUVA sobre una vista aérea de embarcaciones en construcción">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/cauva-display.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/cauva-text.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/brand/logo-cauva-480.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="css/cauva-v10.css?v=10">
+  <script>
+    document.documentElement.classList.add('js');
+    try { if (sessionStorage.getItem('cauva-v10')) document.documentElement.classList.add('visto'); sessionStorage.setItem('cauva-v10', '1'); } catch (e) {}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CAUVA SpA",
+    "alternateName": "CAUVA",
+    "url": "https://cauva.cl/",
+    "logo": "https://cauva.cl/assets/brand/icono-512.png",
+    "slogan": "Ingeniería que resuelve.",
+    "description": "Soluciones eficientes para desafíos navales y marítimos: ingeniería naval, certificaciones, inspecciones técnicas, operaciones marítimas y modelado 3D.",
+    "contactPoint": { "@type": "ContactPoint", "telephone": "+56962757559", "contactType": "customer service", "availableLanguage": "es" },
+    "knowsAbout": ["Ingeniería naval", "Estudios de estabilidad", "Cálculo de arqueo", "Cálculos estructurales", "Certificación de equipos de izaje", "Inspección de cascos", "Medición de espesores", "Bollard Pull", "Pruebas de tracción", "Modelado 3D"]
+  }
+  </script>
+  <script src="js/cauva-v10.js?v=10" defer></script>
 </head>
 <body>
-<aside class="scene-nav" aria-label="Navegación por secciones">
-<a href="#inicio" class="scene-link active"><b>01</b><span>Inicio</span></a>
-<a href="#servicios" class="scene-link"><b>02</b><span>Servicios</span></a>
-<a href="#proyectos" class="scene-link"><b>03</b><span>Proyectos</span></a>
-<a href="#caso" class="scene-link"><b>04</b><span>Caso de éxito</span></a>
-<a href="#nosotros" class="scene-link"><b>05</b><span>Nosotros</span></a>
-<a href="#contacto" class="scene-link"><b>06</b><span>Contacto</span></a>
-</aside>
 
-<header class="header">
-  <div class="container header-inner">
-    <button class="menu-button" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-    <nav class="nav" aria-label="Navegación principal">
-      <a href="#nosotros">Nosotros</a>
+<header class="site-header" data-header>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="wrap header-row">
+    <a class="brand" href="#inicio" aria-label="CAUVA SpA, ir al inicio">
+      <img class="brand-logo" src="assets/brand/logo-cauva-480.webp" srcset="assets/brand/logo-cauva-480.webp 480w, assets/brand/logo-cauva-760.webp 760w" sizes="210px" width="480" height="215" alt="CAUVA">
+    </a>
+    <nav class="nav-main" aria-label="Navegación principal">
       <a href="#servicios">Servicios</a>
+      <a href="#modelado">Modelado 3D</a>
       <a href="#proyectos">Proyectos</a>
-      <a href="#caso">Caso de éxito</a>
+      <a href="#nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <a class="header-whatsapp" href="https://wa.me/56962757559?text=Hola%20CAUVA,%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a>
+    <div class="header-actions">
+      <a class="icon-btn" href="https://wa.me/56962757559?text=Hola%20CAUVA%2C%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener" aria-label="Escribir a CAUVA por WhatsApp">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7 3.9Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.8 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+      </a>
+      <a class="btn btn-primary header-cta" href="#contacto" data-quote>Solicitar cotización</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>
+        <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+        <span class="visually-hidden">Abrir menú</span>
+      </button>
+    </div>
   </div>
 </header>
 
-<main>
-<section class="hero" id="inicio">
-  <img src="assets/img/hero-astillero.jpg" alt="Vista aérea de embarcaciones en construcción en astillero">
-  <div class="hero-overlay"></div>
-  <div class="hero-logo-watermark" aria-hidden="true">
-    <img src="assets/img/logo-v5.png" alt="">
+<main id="contenido">
+
+<!-- ============ PORTADA ============ -->
+<section class="hero" id="inicio" aria-labelledby="hero-titulo">
+  <div class="hero-media" aria-hidden="true">
+    <picture>
+      <source media="(max-width: 700px) and (orientation: portrait)" srcset="assets/img/hero-astillero-movil-720.webp" width="720" height="1286">
+      <img src="assets/img/hero-astillero-2048.webp" srcset="assets/img/hero-astillero-1280.webp 1280w, assets/img/hero-astillero-2048.webp 2048w" sizes="100vw" width="2048" height="1152" alt="" fetchpriority="high">
+    </picture>
   </div>
-  <div class="container hero-content">
-    <p class="eyebrow">Ingeniería naval y operaciones marítimas</p>
-    <h1>Soluciones que mantienen el mundo en movimiento.</h1>
-    <p>Diseño, ingeniería, inspección y certificación para embarcaciones, artefactos navales y centros de cultivo.</p>
-    <div class="hero-actions">
-      <a class="button primary" href="#servicios">Ver servicios</a>
-      <button class="button secondary open-quote" type="button">Solicitar cotización</button>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <svg class="hero-grid" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 100 100"><defs><pattern id="hg" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M4 0H0V4" fill="none" stroke="rgba(199,208,215,.09)" stroke-width=".08"/></pattern></defs><rect width="100" height="100" fill="url(#hg)"/></svg>
+
+  <div class="wrap hero-body">
+    <p class="kicker hero-kicker" data-enter="1"><span class="kicker-line" aria-hidden="true"></span>CAUVA SpA · Ingeniería naval y operaciones marítimas</p>
+    <h1 class="hero-title" id="hero-titulo">
+      <span class="ln-mask"><span data-enter="2">Ingeniería</span></span>
+      <span class="ln-mask"><span data-enter="3">que <em>resuelve.</em></span></span>
+    </h1>
+    <p class="hero-sub" data-enter="4">Soluciones eficientes para desafíos navales y marítimos.</p>
+    <div class="hero-actions" data-enter="5">
+      <a class="btn btn-primary btn-lg" href="#contacto" data-quote>Solicitar cotización</a>
+      <a class="btn btn-glass btn-lg" href="#servicios">Conocer los servicios</a>
+    </div>
+    <ul class="values" data-enter="6" aria-label="Nuestros principios">
+      <li>Precisión</li><li>Eficiencia</li><li>Compromiso</li>
+    </ul>
+  </div>
+
+  <nav class="hero-services" aria-label="Servicios">
+    <div class="wrap">
+      <ol>
+        <li data-enter="7"><a href="#servicios" data-open-service="naval"><span>01</span>Ingeniería naval</a></li>
+        <li data-enter="8"><a href="#servicios" data-open-service="certificaciones"><span>02</span>Certificaciones</a></li>
+        <li data-enter="9"><a href="#servicios" data-open-service="inspecciones"><span>03</span>Inspecciones técnicas</a></li>
+        <li data-enter="10"><a href="#servicios" data-open-service="operaciones"><span>04</span>Operaciones marítimas</a></li>
+        <li data-enter="11"><a href="#servicios" data-open-service="modelado"><span>05</span>Modelado 3D</a></li>
+      </ol>
+    </div>
+  </nav>
+</section>
+
+<!-- ============ NOSOTROS / FILOSOFÍA ============ -->
+<section class="about" id="nosotros" aria-labelledby="nosotros-titulo">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <p class="kicker">Nosotros</p>
+      <h2 id="nosotros-titulo">Entendemos la necesidad. La resolvemos con ingeniería.</h2>
+      <p class="lead">CAUVA es una empresa de ingeniería naval y operaciones marítimas. Queremos ser eficientes, comprender las necesidades de nuestros clientes y entregar soluciones técnicas concretas, confiables y profesionales.</p>
+      <p>Participamos desde la definición conceptual hasta la construcción, certificación y puesta en servicio, combinando diseño, cálculo, documentación, inspección y apoyo operacional.</p>
+    </div>
+    <div class="brand-card">
+      <span class="corner tl" aria-hidden="true"></span><span class="corner tr" aria-hidden="true"></span><span class="corner bl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
+      <img class="brand-card-logo" src="assets/brand/logo-cauva-760.webp" srcset="assets/brand/logo-cauva-480.webp 480w, assets/brand/logo-cauva-760.webp 760w" sizes="(max-width: 860px) 70vw, 420px" width="760" height="341" loading="lazy" decoding="async" alt="Logo de CAUVA">
+      <dl class="principles">
+        <div><dt>Precisión</dt><dd>Cálculos y documentación rigurosos, claros y revisables.</dd></div>
+        <div><dt>Eficiencia</dt><dd>Soluciones concretas, sin pasos innecesarios.</dd></div>
+        <div><dt>Compromiso</dt><dd>Acompañamos cada proyecto en oficina y en terreno.</dd></div>
+      </dl>
     </div>
   </div>
 </section>
 
-<section class="value-strip">
-  <div class="container value-grid">
-    <div><strong>Diseño</strong><span>Ingeniería y modelado naval</span></div>
-    <div><strong>Documentación</strong><span>Planos e informes técnicos</span></div>
-    <div><strong>Inspección</strong><span>Evaluación en terreno</span></div>
-    <div><strong>Operación</strong><span>Apoyo técnico marítimo</span></div>
-  </div>
-</section>
-
-<section id="nosotros" class="section white">
-  <div class="container about-grid">
-    <div class="reveal">
-      <p class="eyebrow">Nosotros</p>
-      <h2>Ingeniería con presencia en terreno.</h2>
-      <p class="lead">CAUVA desarrolla soluciones integrales para proyectos marítimos, combinando diseño, cálculo, documentación, inspección y apoyo operacional.</p>
-      <p>Participamos desde la definición conceptual hasta la construcción, certificación y puesta en servicio.</p>
+<!-- ============ RECORRIDO DE UN PROYECTO (secuencia animada) ============ -->
+<section class="film" id="recorrido" aria-labelledby="recorrido-titulo" data-film>
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker kicker-light">Cómo trabajamos</p>
+      <h2 id="recorrido-titulo">De la necesidad a la solución.</h2>
     </div>
-    <img class="about-image reveal" src="assets/img/equipo.jpeg" alt="Equipo técnico trabajando en terreno">
+    <div class="film-frame">
+      <div class="film-stage" aria-live="off">
+        <figure class="scene is-active" data-scene="0">
+          <img src="assets/img/nosotros-cubierta-1100.webp" srcset="assets/img/nosotros-cubierta-700.webp 700w, assets/img/nosotros-cubierta-1100.webp 1100w" sizes="(max-width: 900px) 92vw, 1100px" width="1100" height="1650" loading="lazy" decoding="async" alt="Cubierta de una embarcación con cabo de amarre frente al mar">
+        </figure>
+        <figure class="scene scene-draw" data-scene="1">
+          <svg class="art draw" viewBox="0 0 640 360" role="img" aria-label="Ilustración conceptual: sección transversal con centro de gravedad, centro de carena y metacentro, junto a una curva de estabilidad">
+            <g class="art-grid"><path d="M0 60H640M0 120H640M0 180H640M0 240H640M0 300H640M80 0V360M160 0V360M240 0V360M320 0V360M400 0V360M480 0V360M560 0V360"/></g>
+            <path class="ln" pathLength="1" d="M70 120 V214 Q70 262 120 266 H220 Q270 262 270 214 V120"/>
+            <path class="ln ln-thin" pathLength="1" d="M40 200 H300" style="--d:.2"/>
+            <path class="ln ln-thin dash" pathLength="1" d="M170 90 V290" style="--d:.3"/>
+            <circle class="ln dot" pathLength="1" cx="170" cy="182" r="5" style="--d:.6"/><text x="182" y="186">G</text>
+            <circle class="ln dot" pathLength="1" cx="170" cy="232" r="5" style="--d:.7"/><text x="182" y="236">B</text>
+            <circle class="ln dot accent" pathLength="1" cx="170" cy="128" r="5" style="--d:.8"/><text x="182" y="132">M</text>
+            <path class="ln ln-thin" pathLength="1" d="M360 290 H610 M360 290 V80" style="--d:.4"/>
+            <path class="ln accent" pathLength="1" d="M360 290 C410 230 450 150 500 132 C540 120 570 170 600 260" style="--d:.9"/>
+            <text x="590" y="310">θ</text><text x="330" y="96">GZ</text>
+            <text class="tag" x="40" y="336">ESTABILIDAD · ILUSTRACIÓN CONCEPTUAL</text>
+          </svg>
+        </figure>
+        <figure class="scene scene-render" data-scene="2">
+          <img src="assets/img/modelo-color-1600.webp" srcset="assets/img/modelo-color-900.webp 900w, assets/img/modelo-color-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 1100px" width="1600" height="900" loading="lazy" decoding="async" alt="Modelo 3D de una embarcación de trabajo con casco azul y rojo">
+        </figure>
+        <figure class="scene" data-scene="3">
+          <img src="assets/img/srv-naval-1200.webp" srcset="assets/img/srv-naval-700.webp 700w, assets/img/srv-naval-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 1100px" width="1200" height="675" loading="lazy" decoding="async" alt="Casco de acero en construcción sobre andamios">
+        </figure>
+        <figure class="scene" data-scene="4">
+          <img src="assets/img/pro-casco-1200.webp" srcset="assets/img/pro-casco-700.webp 700w, assets/img/pro-casco-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 1100px" width="1200" height="900" loading="lazy" decoding="async" alt="Embarcación a flote en operación">
+        </figure>
+        <div class="film-hud" aria-hidden="true">
+          <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
+          <span class="hud-tag" data-film-tag>01 · Necesidad</span>
+        </div>
+      </div>
+      <div class="film-bar">
+        <button class="film-play" type="button" data-film-play aria-pressed="false">
+          <span class="fp-icon" aria-hidden="true"></span><span data-film-play-label>Reproducir</span>
+        </button>
+        <ol class="film-steps" aria-label="Etapas del recorrido">
+          <li><button type="button" data-film-step="0" aria-current="step"><span class="fs-bar"><span></span></span><span class="fs-num">01</span><span class="fs-title">Necesidad</span><span class="fs-text">Un requerimiento concreto: construir, modificar, certificar u operar.</span></button></li>
+          <li><button type="button" data-film-step="1"><span class="fs-bar"><span></span></span><span class="fs-num">02</span><span class="fs-title">Ingeniería</span><span class="fs-text">Analizamos el caso y calculamos: estabilidad, estructura, arqueo.</span></button></li>
+          <li><button type="button" data-film-step="2"><span class="fs-bar"><span></span></span><span class="fs-num">03</span><span class="fs-title">Diseño</span><span class="fs-text">Modelamos la solución en 3D y la documentamos en planos.</span></button></li>
+          <li><button type="button" data-film-step="3"><span class="fs-bar"><span></span></span><span class="fs-num">04</span><span class="fs-title">Construcción</span><span class="fs-text">Acompañamos la ejecución en terreno con apoyo técnico.</span></button></li>
+          <li><button type="button" data-film-step="4"><span class="fs-bar"><span></span></span><span class="fs-num">05</span><span class="fs-title">Solución</span><span class="fs-text">La embarcación o el equipo opera con respaldo técnico.</span></button></li>
+        </ol>
+      </div>
+      <p class="film-caption" data-film-caption aria-live="polite"></p>
+    </div>
+    <p class="note note-light">Secuencia animada con fotografías de CAUVA e ilustraciones conceptuales propias.</p>
   </div>
 </section>
 
-<section id="servicios" class="section services-section">
-  <div class="container">
-    <div class="section-heading reveal">
+<!-- ============ SERVICIOS ============ -->
+<section class="services" id="servicios" aria-labelledby="servicios-titulo">
+  <div class="wrap">
+    <div class="section-head section-head-row">
       <div>
-        <p class="eyebrow">Nuestros servicios</p>
-        <h2>Ingeniería para cada etapa del proyecto.</h2>
+        <p class="kicker">Servicios</p>
+        <h2 id="servicios-titulo">Cinco áreas. Una forma de trabajar: resolver.</h2>
       </div>
-      <p>Selecciona un área para conocer su alcance.</p>
+      <p class="section-intro">Cada servicio responde a una necesidad concreta. Elige un área para ver qué hacemos, qué resolvemos y cómo te ayudamos.</p>
     </div>
 
-    <div class="services-layout">
-      <div class="service-tabs reveal" role="tablist">
-        <button class="service-tab active" data-target="naval"><span>01</span>Ingeniería Naval</button>
-        <button class="service-tab" data-target="cert"><span>02</span>Certificaciones</button>
-        <button class="service-tab" data-target="insp"><span>03</span>Inspecciones</button>
-        <button class="service-tab" data-target="ops"><span>04</span>Operaciones Marítimas</button>
-        <button class="service-tab" data-target="model"><span>05</span>Modelado 3D</button>
-      </div>
-
-      <div class="service-panels reveal">
-        <article class="service-panel active" id="naval">
-          <div>
-            <p class="eyebrow">Ingeniería Naval</p>
-            <h3>Diseño y cálculo para embarcaciones y artefactos navales.</h3>
-            <ul>
-              <li>Planos reglamentarios y constructivos</li>
-              <li>Cálculo de arqueo</li>
-              <li>Estudios de estabilidad</li>
-              <li>Cálculos estructurales</li>
-              <li>Manual de sujeción de carga</li>
-            </ul>
-          </div>
-          <img class="zoomable" src="assets/img/render-1.png" alt="Modelo 3D de embarcación">
-        </article>
-
-        <article class="service-panel" id="cert">
-          <div>
-            <p class="eyebrow">Certificaciones</p>
-            <h3>Respaldo técnico para equipos y estructuras.</h3>
-            <ul>
-              <li>Grúas y equipos de izaje</li>
-              <li>Winches y cabrestantes</li>
-              <li>Líneas de remolque</li>
-              <li>Estructuras de centros de cultivo</li>
-            </ul>
-          </div>
-          <img class="zoomable" src="assets/img/grua.jpeg" alt="Equipo de izaje a bordo">
-        </article>
-
-        <article class="service-panel" id="insp">
-          <div>
-            <p class="eyebrow">Inspecciones</p>
-            <h3>Evaluación técnica en terreno.</h3>
-            <ul>
-              <li>Medición de espesores</li>
-              <li>Inspección de cascos</li>
-              <li>Inspección de centros de cultivo</li>
-              <li>Informes de condición</li>
-            </ul>
-          </div>
-          <img class="zoomable" src="assets/img/inclinacion-3.jpeg" alt="Inspección técnica">
-        </article>
-
-        <article class="service-panel" id="ops">
-          <div>
-            <p class="eyebrow">Operaciones Marítimas</p>
-            <h3>Planificación y apoyo técnico para maniobras seguras.</h3>
-            <ul>
-              <li>Cálculo para faenas de remolque</li>
-              <li>Bollard Pull</li>
-              <li>Pruebas de tracción</li>
-            </ul>
-          </div>
-          <img class="zoomable" src="assets/img/artefacto.jpg" alt="Operación marítima">
-        </article>
-
-        <article class="service-panel" id="model">
-          <div>
-            <p class="eyebrow">Modelado 3D</p>
-            <h3>Visualización y desarrollo antes de construir.</h3>
-            <ul>
-              <li>Diseño conceptual</li>
-              <li>Modelado estructural</li>
-              <li>Ingeniería de detalle</li>
-              <li>Planos de fabricación</li>
-            </ul>
-          </div>
-          <img class="zoomable" src="assets/img/render-2.jpeg" alt="Modelo tridimensional naval">
-        </article>
-      </div>
+    <div class="svc-tabs" role="tablist" aria-label="Áreas de servicio" data-svc-tabs>
+      <button role="tab" type="button" id="tab-naval" aria-controls="panel-naval" aria-selected="true" tabindex="0" data-svc="naval"><span>01</span>Ingeniería naval</button>
+      <button role="tab" type="button" id="tab-certificaciones" aria-controls="panel-certificaciones" aria-selected="false" tabindex="-1" data-svc="certificaciones"><span>02</span>Certificaciones</button>
+      <button role="tab" type="button" id="tab-inspecciones" aria-controls="panel-inspecciones" aria-selected="false" tabindex="-1" data-svc="inspecciones"><span>03</span>Inspecciones técnicas</button>
+      <button role="tab" type="button" id="tab-operaciones" aria-controls="panel-operaciones" aria-selected="false" tabindex="-1" data-svc="operaciones"><span>04</span>Operaciones marítimas</button>
+      <button role="tab" type="button" id="tab-modelado" aria-controls="panel-modelado" aria-selected="false" tabindex="-1" data-svc="modelado"><span>05</span>Modelado 3D</button>
     </div>
+
+    <!-- 01 -->
+    <article class="svc-panel is-active" id="panel-naval" role="tabpanel" aria-labelledby="tab-naval" tabindex="0">
+      <div class="svc-art">
+        <svg class="art art-light draw" viewBox="0 0 480 300" role="img" aria-label="Ilustración conceptual: plano de líneas de un casco con estaciones y líneas de agua">
+          <g class="art-grid"><path d="M0 50H480M0 100H480M0 150H480M0 200H480M0 250H480M60 0V300M120 0V300M180 0V300M240 0V300M300 0V300M360 0V300M420 0V300"/></g>
+          <path class="ln" pathLength="1" d="M40 92 H372 Q420 94 440 146 L432 192 Q414 224 372 228 H86 Q50 226 44 200 Z"/>
+          <path class="ln ln-thin dash" pathLength="1" d="M44 140 H440 M44 168 H436 M44 196 H430" style="--d:.3"/>
+          <path class="ln ln-thin" pathLength="1" d="M80 92 V228 M120 92 V228 M160 92 V228 M200 92 V228 M240 92 V228 M280 92 V228 M320 92 V228 M360 92 V228" style="--d:.5"/>
+          <path class="ln accent" pathLength="1" d="M44 262 H440 M44 254 V270 M440 254 V270" style="--d:.9"/>
+          <text class="tag" x="40" y="58">PLANO DE LÍNEAS</text><text x="222" y="286">ESLORA</text>
+        </svg>
+      </div>
+      <div class="svc-body">
+        <p class="svc-num">01 · Ingeniería naval</p>
+        <h3>Diseño y cálculo para embarcaciones y artefactos navales.</h3>
+        <dl class="svc-3">
+          <div><dt>Qué hacemos</dt><dd>Planos reglamentarios y constructivos, cálculo de arqueo, estudios de estabilidad, cálculos estructurales y manual de sujeción de carga.</dd></div>
+          <div><dt>Qué resolvemos</dt><dd>Construir, modificar o regularizar una embarcación o artefacto naval con el respaldo técnico que exige el proyecto.</dd></div>
+          <div><dt>Cómo te ayudamos</dt><dd>Desarrollamos la ingeniería y la documentación con cálculos claros y verificables.</dd></div>
+        </dl>
+        <div class="svc-actions">
+          <a class="btn btn-primary" href="#contacto" data-quote="Ingeniería Naval">Cotizar ingeniería naval</a>
+          <a class="link-arrow" href="https://wa.me/56962757559?text=Hola%20CAUVA%2C%20quisiera%20consultar%20por%20Ingenier%C3%ADa%20Naval." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 -->
+    <article class="svc-panel" id="panel-certificaciones" role="tabpanel" aria-labelledby="tab-certificaciones" tabindex="0" hidden>
+      <div class="svc-art">
+        <svg class="art art-light draw" viewBox="0 0 480 300" role="img" aria-label="Ilustración conceptual: grúa de cubierta con su radio de trabajo y carga">
+          <g class="art-grid"><path d="M0 50H480M0 100H480M0 150H480M0 200H480M0 250H480M60 0V300M120 0V300M180 0V300M240 0V300M300 0V300M360 0V300M420 0V300"/></g>
+          <path class="ln" pathLength="1" d="M70 262 H170 M90 262 V214 H150 V262 M108 214 V112 H132 V214"/>
+          <path class="ln" pathLength="1" d="M120 118 L372 56 M128 132 L372 66" style="--d:.3"/>
+          <path class="ln ln-thin" pathLength="1" d="M366 62 V186" style="--d:.6"/>
+          <path class="ln" pathLength="1" d="M338 186 H394 V230 H338 Z" style="--d:.8"/>
+          <path class="ln ln-thin dash" pathLength="1" d="M120 262 A250 250 0 0 1 366 216" style="--d:.5"/>
+          <path class="ln accent" pathLength="1" d="M420 150 V214 M412 204 L420 216 L428 204" style="--d:1"/>
+          <text class="tag" x="40" y="58">EQUIPO DE IZAJE</text><text x="410" y="140">CARGA</text><text x="214" y="246">RADIO</text>
+        </svg>
+      </div>
+      <div class="svc-body">
+        <p class="svc-num">02 · Certificaciones</p>
+        <h3>Respaldo técnico para equipos y estructuras.</h3>
+        <dl class="svc-3">
+          <div><dt>Qué hacemos</dt><dd>Certificación de grúas y equipos de izaje, winches y cabrestantes, líneas de remolque y estructuras de centros de cultivo.</dd></div>
+          <div><dt>Qué resolvemos</dt><dd>Demostrar que un equipo o una estructura cumple su función de forma segura.</dd></div>
+          <div><dt>Cómo te ayudamos</dt><dd>Evaluamos, calculamos y documentamos su condición para respaldar la certificación.</dd></div>
+        </dl>
+        <div class="svc-actions">
+          <a class="btn btn-primary" href="#contacto" data-quote="Certificación de grúas, winches o cabrestantes">Cotizar una certificación</a>
+          <a class="link-arrow" href="https://wa.me/56962757559?text=Hola%20CAUVA%2C%20quisiera%20consultar%20por%20Certificaciones." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 -->
+    <article class="svc-panel" id="panel-inspecciones" role="tabpanel" aria-labelledby="tab-inspecciones" tabindex="0" hidden>
+      <div class="svc-art">
+        <svg class="art art-light draw" viewBox="0 0 480 300" role="img" aria-label="Ilustración conceptual: plancha de casco con cuadrícula de puntos de medición de espesor">
+          <g class="art-grid"><path d="M0 50H480M0 100H480M0 150H480M0 200H480M0 250H480M60 0V300M120 0V300M180 0V300M240 0V300M300 0V300M360 0V300M420 0V300"/></g>
+          <path class="ln" pathLength="1" d="M60 80 H420 V250 H60 Z"/>
+          <path class="ln ln-thin" pathLength="1" d="M180 80 V250 M300 80 V250 M60 165 H420" style="--d:.3"/>
+          <g class="pts">
+            <circle cx="100" cy="112" r="5"/><circle cx="140" cy="112" r="5"/><circle cx="220" cy="112" r="5"/><circle cx="260" cy="112" r="5"/><circle cx="340" cy="112" r="5"/><circle cx="380" cy="112" r="5"/>
+            <circle cx="100" cy="210" r="5"/><circle cx="140" cy="210" r="5"/><circle cx="220" cy="210" r="5"/><circle cx="260" cy="210" r="5"/><circle cx="340" cy="210" r="5"/><circle cx="380" cy="210" r="5"/>
+            <circle class="hi" cx="260" cy="112" r="5"/><circle class="hi" cx="340" cy="210" r="5"/>
+          </g>
+          <path class="ln accent" pathLength="1" d="M340 210 L410 270 H450" style="--d:1"/>
+          <text class="tag" x="40" y="58">MEDICIÓN DE ESPESORES</text><text x="384" y="292">PUNTO</text>
+        </svg>
+      </div>
+      <div class="svc-body">
+        <p class="svc-num">03 · Inspecciones técnicas</p>
+        <h3>Evaluación técnica en terreno.</h3>
+        <dl class="svc-3">
+          <div><dt>Qué hacemos</dt><dd>Medición de espesores, inspección de cascos, inspección de centros de cultivo e informes de condición.</dd></div>
+          <div><dt>Qué resolvemos</dt><dd>Conocer el estado real de un casco o una estructura antes de decidir reparaciones u operación.</dd></div>
+          <div><dt>Cómo te ayudamos</dt><dd>Inspeccionamos en terreno y entregamos un informe técnico claro con lo observado y medido.</dd></div>
+        </dl>
+        <div class="svc-actions">
+          <a class="btn btn-primary" href="#contacto" data-quote="Inspección de casco">Cotizar una inspección</a>
+          <a class="link-arrow" href="https://wa.me/56962757559?text=Hola%20CAUVA%2C%20quisiera%20consultar%20por%20Inspecciones." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 -->
+    <article class="svc-panel" id="panel-operaciones" role="tabpanel" aria-labelledby="tab-operaciones" tabindex="0" hidden>
+      <div class="svc-art">
+        <svg class="art art-light draw" viewBox="0 0 480 300" role="img" aria-label="Ilustración conceptual: prueba de Bollard Pull con remolcador, línea, celda de carga y bita">
+          <g class="art-grid"><path d="M0 50H480M0 100H480M0 150H480M0 200H480M0 250H480M60 0V300M120 0V300M180 0V300M240 0V300M300 0V300M360 0V300M420 0V300"/></g>
+          <path class="ln" pathLength="1" d="M40 170 H190 L176 214 Q160 230 120 230 H66 Q46 228 40 210 Z M70 170 V134 H130 L142 170"/>
+          <path class="ln ln-thin dash" pathLength="1" d="M20 200 H460" style="--d:.3"/>
+          <path class="ln" pathLength="1" d="M186 168 L292 168 M332 168 L404 176" style="--d:.5"/>
+          <path class="ln" pathLength="1" d="M292 154 H332 V182 H292 Z" style="--d:.7"/>
+          <path class="ln" pathLength="1" d="M404 160 V230 M396 160 H412 M388 230 H420" style="--d:.8"/>
+          <path class="ln accent" pathLength="1" d="M270 120 H190 M202 112 L190 120 L202 128" style="--d:1"/>
+          <text class="tag" x="40" y="58">BOLLARD PULL</text><text x="286" y="146">CELDA</text><text x="214" y="108">F</text><text x="384" y="252">BITA</text>
+        </svg>
+      </div>
+      <div class="svc-body">
+        <p class="svc-num">04 · Operaciones marítimas</p>
+        <h3>Planificación y apoyo técnico para maniobras seguras.</h3>
+        <dl class="svc-3">
+          <div><dt>Qué hacemos</dt><dd>Cálculo para faenas de remolque, pruebas de Bollard Pull y pruebas de tracción.</dd></div>
+          <div><dt>Qué resolvemos</dt><dd>Planificar maniobras con márgenes conocidos y verificar la capacidad real de tracción.</dd></div>
+          <div><dt>Cómo te ayudamos</dt><dd>Calculamos la faena, acompañamos las pruebas y documentamos los resultados.</dd></div>
+        </dl>
+        <div class="svc-actions">
+          <a class="btn btn-primary" href="#contacto" data-quote="Bollard Pull">Cotizar una operación</a>
+          <a class="link-arrow" href="https://wa.me/56962757559?text=Hola%20CAUVA%2C%20quisiera%20consultar%20por%20Operaciones%20Mar%C3%ADtimas." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 -->
+    <article class="svc-panel" id="panel-modelado" role="tabpanel" aria-labelledby="tab-modelado" tabindex="0" hidden>
+      <div class="svc-art">
+        <svg class="art art-light draw" viewBox="0 0 480 300" role="img" aria-label="Ilustración conceptual: casco en alambre con cuadernas y longitudinales">
+          <g class="art-grid"><path d="M0 50H480M0 100H480M0 150H480M0 200H480M0 250H480M60 0V300M120 0V300M180 0V300M240 0V300M300 0V300M360 0V300M420 0V300"/></g>
+          <g class="ln-group">
+            <path class="ln ln-thin" pathLength="1" d="M70 200 Q70 250 120 254 Q170 250 170 200" style="--d:0"/>
+            <path class="ln ln-thin" pathLength="1" d="M120 180 Q120 232 172 236 Q224 232 224 180" style="--d:.1"/>
+            <path class="ln ln-thin" pathLength="1" d="M170 160 Q170 214 224 218 Q278 214 278 160" style="--d:.2"/>
+            <path class="ln ln-thin" pathLength="1" d="M220 140 Q220 196 276 200 Q332 196 332 140" style="--d:.3"/>
+            <path class="ln ln-thin" pathLength="1" d="M270 120 Q270 176 326 180 Q382 176 382 120" style="--d:.4"/>
+            <path class="ln ln-thin" pathLength="1" d="M320 100 Q324 150 370 156 Q416 150 420 100" style="--d:.5"/>
+          </g>
+          <path class="ln" pathLength="1" d="M70 200 L320 100 M170 200 L420 100 M120 254 L370 156" style="--d:.7"/>
+          <path class="ln accent" pathLength="1" d="M70 200 H170 L420 100 H320 Z" style="--d:1"/>
+          <text class="tag" x="40" y="58">MODELO ESTRUCTURAL</text>
+        </svg>
+      </div>
+      <div class="svc-body">
+        <p class="svc-num">05 · Modelado 3D</p>
+        <h3>Visualización y desarrollo antes de construir.</h3>
+        <dl class="svc-3">
+          <div><dt>Qué hacemos</dt><dd>Diseño conceptual, modelado estructural, ingeniería de detalle y planos de fabricación.</dd></div>
+          <div><dt>Qué resolvemos</dt><dd>Ver y validar una embarcación antes de cortar el primer acero.</dd></div>
+          <div><dt>Cómo te ayudamos</dt><dd>Modelamos el proyecto completo para revisar el diseño y generar planos de fabricación.</dd></div>
+        </dl>
+        <div class="svc-actions">
+          <a class="btn btn-primary" href="#contacto" data-quote="Modelado 3D">Cotizar modelado 3D</a>
+          <a class="link-arrow" href="#modelado">Ver el proceso de modelado</a>
+        </div>
+      </div>
+    </article>
+    <p class="note">Las ilustraciones de esta sección son conceptuales y fueron creadas para la web de CAUVA.</p>
   </div>
 </section>
 
-<section id="proyectos" class="section navy">
-  <div class="container">
-    <div class="section-heading reveal">
+<!-- ============ MODELADO 3D ============ -->
+<section class="model" id="modelado" aria-labelledby="modelado-titulo" data-model>
+  <div class="wrap">
+    <div class="section-head section-head-row">
       <div>
-        <p class="eyebrow">Proyectos</p>
-        <h2>Experiencia aplicada.</h2>
+        <p class="kicker">Modelado 3D</p>
+        <h2 id="modelado-titulo">Del concepto a la construcción, en cinco pasos.</h2>
       </div>
-      <p>Ingeniería desarrollada para necesidades reales de operación y construcción.</p>
+      <p class="section-intro">Así se desarrolla una embarcación antes de su construcción. Los pasos 2, 3 y 5 muestran modelos 3D de catamaranes desarrollados por CAUVA.</p>
     </div>
 
-    <div class="project-grid">
-      <article class="project project-large reveal">
-        <img class="zoomable" src="assets/img/catamaran.jpg" alt="Catamarán multipropósito">
-        <div><small>Proyecto 01</small><h3>Catamarán multipropósito</h3><p>Ingeniería estructural, planos constructivos y apoyo técnico.</p></div>
-      </article>
-      <article class="project reveal">
-        <img class="zoomable" src="assets/img/barcaza.jpg" alt="Barcaza en construcción">
-        <div><small>Proyecto 02</small><h3>Barcaza de servicio</h3><p>Planos estructurales y documentación para su habilitación operacional.</p></div>
-      </article>
-      <article class="project reveal">
-        <img class="zoomable" src="assets/img/casco.png" alt="Inspección de casco">
-        <div><small>Proyecto 03</small><h3>Inspección de casco</h3><p>Participación en terreno, análisis de registros e informe técnico.</p></div>
-      </article>
+    <div class="model-steps" role="tablist" aria-label="Pasos del desarrollo" data-model-tabs>
+      <button role="tab" type="button" id="mt-1" aria-controls="mp-1" aria-selected="true" tabindex="0"><span>1</span>Diseño conceptual</button>
+      <button role="tab" type="button" id="mt-2" aria-controls="mp-2" aria-selected="false" tabindex="-1"><span>2</span>Modelado tridimensional</button>
+      <button role="tab" type="button" id="mt-3" aria-controls="mp-3" aria-selected="false" tabindex="-1"><span>3</span>Desarrollo estructural</button>
+      <button role="tab" type="button" id="mt-4" aria-controls="mp-4" aria-selected="false" tabindex="-1"><span>4</span>Planos constructivos</button>
+      <button role="tab" type="button" id="mt-5" aria-controls="mp-5" aria-selected="false" tabindex="-1"><span>5</span>Construcción</button>
+      <span class="model-progress" aria-hidden="true"><span data-model-progress></span></span>
+    </div>
+
+    <div class="model-stage" data-model-stage>
+      <div class="model-panel is-active" id="mp-1" role="tabpanel" aria-labelledby="mt-1">
+        <div class="model-visual">
+          <svg class="art art-paper draw" viewBox="0 0 800 450" role="img" aria-label="Ilustración conceptual: boceto de perfil y vista frontal de un catamarán con líneas de construcción">
+            <g class="art-grid"><path d="M0 75H800M0 150H800M0 225H800M0 300H800M0 375H800M100 0V450M200 0V450M300 0V450M400 0V450M500 0V450M600 0V450M700 0V450"/></g>
+            <path class="ln ln-thin dash" pathLength="1" d="M40 300 H600 M80 120 V330 M520 120 V330"/>
+            <path class="ln" pathLength="1" d="M70 300 L96 238 H520 L560 262 L548 300 Z" style="--d:.2"/>
+            <path class="ln" pathLength="1" d="M150 238 V176 H300 L326 238 M176 176 V150 H270 V176 M224 150 V118" style="--d:.5"/>
+            <path class="ln ln-thin" pathLength="1" d="M380 238 L400 214 H460 L470 238" style="--d:.7"/>
+            <path class="ln" pathLength="1" d="M630 300 V262 Q630 236 654 236 Q678 236 678 262 V300 M722 300 V262 Q722 236 746 236 Q770 236 770 262 V300 M624 236 H776 M650 236 V196 H750 V236" style="--d:.8"/>
+            <path class="ln accent" pathLength="1" d="M40 330 H600" style="--d:1.1"/>
+            <text class="tag" x="40" y="60">BOCETO · PERFIL Y VISTA FRONTAL</text><text x="290" y="356">ESLORA</text>
+          </svg>
+          <span class="badge">Ilustración conceptual</span>
+        </div>
+        <div class="model-copy">
+          <h3>Diseño conceptual</h3>
+          <p>Se define qué debe hacer la embarcación: dimensiones principales, disposición de cubierta y equipos. Es la base de todo lo que sigue.</p>
+        </div>
+      </div>
+
+      <div class="model-panel" id="mp-2" role="tabpanel" aria-labelledby="mt-2" hidden>
+        <div class="model-visual model-visual-render">
+          <button class="zoom" type="button" data-zoom data-group="catamaran" aria-label="Ampliar: modelo 3D del catamarán">
+            <img src="assets/img/cat-modelo-1600.webp" srcset="assets/img/cat-modelo-900.webp 900w, assets/img/cat-modelo-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 820px" width="1600" height="900" loading="lazy" decoding="async" alt="Modelo 3D del catamarán multipropósito">
+          </button>
+        </div>
+        <div class="model-copy">
+          <h3>Modelado tridimensional</h3>
+          <p>La embarcación completa se modela en 3D: casco, timonera, cubierta de trabajo, grúa y equipos. Permite ver el proyecto antes de construir.</p>
+        </div>
+      </div>
+
+      <div class="model-panel" id="mp-3" role="tabpanel" aria-labelledby="mt-3" hidden>
+        <div class="model-visual model-visual-render">
+          <button class="zoom" type="button" data-zoom data-group="catamaran" aria-label="Ampliar: vista posterior del modelo con sus dos cascos">
+            <img src="assets/img/cat-estructura-1600.webp" srcset="assets/img/cat-estructura-900.webp 900w, assets/img/cat-estructura-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 820px" width="1600" height="900" loading="lazy" decoding="async" alt="Vista posterior del modelo del catamarán con sus dos cascos">
+          </button>
+        </div>
+        <div class="model-copy">
+          <h3>Desarrollo estructural</h3>
+          <p>Sobre el modelo se calculan los elementos estructurales de los dos cascos y la cubierta de trabajo.</p>
+        </div>
+      </div>
+
+      <div class="model-panel" id="mp-4" role="tabpanel" aria-labelledby="mt-4" hidden>
+        <div class="model-visual">
+          <svg class="art art-paper draw" viewBox="0 0 800 450" role="img" aria-label="Ilustración conceptual: disposición general de cubierta con timonera, grúa, winche y numeración de cuadernas">
+            <g class="art-grid"><path d="M0 75H800M0 150H800M0 225H800M0 300H800M0 375H800M100 0V450M200 0V450M300 0V450M400 0V450M500 0V450M600 0V450M700 0V450"/></g>
+            <path class="ln" pathLength="1" d="M60 110 H580 Q700 112 730 225 Q700 338 580 340 H60 Z"/>
+            <path class="ln ln-thin dash" pathLength="1" d="M60 225 H730" style="--d:.2"/>
+            <path class="ln" pathLength="1" d="M470 150 H600 V300 H470 Z" style="--d:.4"/>
+            <circle class="ln" pathLength="1" cx="380" cy="170" r="26" style="--d:.6"/>
+            <path class="ln" pathLength="1" d="M300 250 H360 V300 H300 Z M60 150 H96 V300 H60" style="--d:.7"/>
+            <path class="ln ln-thin" pathLength="1" d="M100 372 V384 M150 372 V384 M200 372 V384 M250 372 V384 M300 372 V384 M350 372 V384 M400 372 V384 M450 372 V384 M500 372 V384 M550 372 V384 M600 372 V384 M60 378 H640" style="--d:.8"/>
+            <path class="ln accent" pathLength="1" d="M380 170 L452 128" style="--d:1.1"/>
+            <text class="tag" x="40" y="60">DISPOSICIÓN GENERAL · CUBIERTA</text>
+            <text x="500" y="230">TIMONERA</text><text x="356" y="124">GRÚA</text><text x="296" y="322">WINCHE</text><text x="66" y="322">RAMPA</text>
+            <text x="96" y="404">0</text><text x="342" y="404">25</text><text x="592" y="404">50</text>
+          </svg>
+          <span class="badge">Ilustración conceptual</span>
+        </div>
+        <div class="model-copy">
+          <h3>Planos constructivos</h3>
+          <p>Del modelo salen los planos para fabricar y armar cada parte: disposición general, estructura y detalles.</p>
+        </div>
+      </div>
+
+      <div class="model-panel" id="mp-5" role="tabpanel" aria-labelledby="mt-5" hidden>
+        <div class="model-visual model-visual-white">
+          <button class="zoom zoom-contain" type="button" data-zoom data-group="modelo-final" aria-label="Ampliar: vista de popa del catamarán">
+            <img src="assets/img/modelo-final-popa-1600.webp" srcset="assets/img/modelo-final-popa-900.webp 900w, assets/img/modelo-final-popa-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 820px" width="1600" height="1479" loading="lazy" decoding="async" alt="Vista de popa del catamarán: dos cascos con hélices, timonera y equipo de cubierta">
+          </button>
+        </div>
+        <div class="model-copy">
+          <h3>Construcción y aplicación real</h3>
+          <p>El diseño se consolida en el plano de arreglo general: dos cascos, timonera, cubierta de trabajo y equipos, listos para construirse y operar.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="caso" class="section white">
-  <div class="container case-grid">
-    <div class="case-copy reveal">
-      <p class="eyebrow">Caso de éxito</p>
-      <h2>Experimento de inclinación.</h2>
-      <p>Preparación, distribución de pesos, registro de mediciones y elaboración del respaldo técnico para evaluación de estabilidad.</p>
-      <ul>
-        <li>Planificación y ejecución en terreno</li>
-        <li>Medición y análisis de datos</li>
-        <li>Informe técnico</li>
+<!-- ============ PROYECTOS ============ -->
+<section class="projects" id="proyectos" aria-labelledby="proyectos-titulo">
+  <div class="wrap">
+    <div class="section-head section-head-row">
+      <div>
+        <p class="kicker kicker-light">Proyectos</p>
+        <h2 id="proyectos-titulo">Experiencia aplicada en terreno.</h2>
+      </div>
+      <p class="section-intro section-intro-light">Ingeniería desarrollada para necesidades reales de operación y construcción.</p>
+    </div>
+
+    <article class="proj proj-feature">
+      <button class="proj-media" type="button" data-zoom data-group="catamaran" aria-label="Ampliar galería del catamarán multipropósito">
+        <img src="assets/img/cat-cubierta-900.webp" srcset="assets/img/cat-cubierta-700.webp 700w, assets/img/cat-cubierta-900.webp 900w" sizes="(max-width: 900px) 92vw, 560px" width="900" height="1600" loading="lazy" decoding="async" alt="Cubierta del catamarán en construcción vista desde arriba">
+        <span class="proj-count">Galería · 5 imágenes</span>
+      </button>
+      <div class="proj-body">
+        <p class="proj-tag">Proyecto 01</p>
+        <h3>Catamarán multipropósito</h3>
+        <dl class="spec">
+          <div><dt>Alcance</dt><dd>Ingeniería estructural, planos constructivos y apoyo técnico.</dd></div>
+          <div><dt>Etapas</dt><dd>Modelado 3D, desarrollo estructural, planos y acompañamiento de la construcción.</dd></div>
+        </dl>
+        <div class="proj-thumbs">
+          <button class="thumb" type="button" data-zoom data-group="catamaran" aria-label="Ampliar: modelo 3D en colores">
+            <img src="assets/img/modelo-color-900.webp" width="900" height="506" loading="lazy" decoding="async" alt="Modelo 3D de embarcación con casco azul y rojo">
+          </button>
+          <button class="thumb" type="button" data-zoom data-group="catamaran" aria-label="Ampliar: casco de acero en construcción">
+            <img src="assets/img/cat-construccion-900.webp" width="900" height="506" loading="lazy" decoding="async" alt="Casco de acero del catamarán en construcción">
+          </button>
+        </div>
+        <a class="link-arrow link-light" href="#modelado">Ver el desarrollo paso a paso</a>
+      </div>
+    </article>
+
+    <div class="proj-pair">
+      <article class="proj">
+        <button class="proj-media" type="button" data-zoom data-group="barcaza" aria-label="Ampliar: barcaza de servicio">
+          <img src="assets/img/pro-barcaza-1200.webp" srcset="assets/img/pro-barcaza-700.webp 700w, assets/img/pro-barcaza-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 46vw" width="1200" height="675" loading="lazy" decoding="async" alt="Timonera de la barcaza de servicio en construcción">
+        </button>
+        <div class="proj-body">
+          <p class="proj-tag">Proyecto 02</p>
+          <h3>Barcaza de servicio</h3>
+          <dl class="spec"><div><dt>Alcance</dt><dd>Planos estructurales y documentación para su habilitación operacional.</dd></div></dl>
+        </div>
+      </article>
+      <article class="proj">
+        <button class="proj-media" type="button" data-zoom data-group="casco" aria-label="Ampliar: embarcación en inspección de casco">
+          <img src="assets/img/pro-casco-1200.webp" srcset="assets/img/pro-casco-700.webp 700w, assets/img/pro-casco-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 46vw" width="1200" height="900" loading="lazy" decoding="async" alt="Embarcación a flote durante la inspección de casco">
+        </button>
+        <div class="proj-body">
+          <p class="proj-tag">Proyecto 03</p>
+          <h3>Inspección de casco</h3>
+          <dl class="spec"><div><dt>Alcance</dt><dd>Participación en terreno, análisis de registros e informe técnico.</dd></div></dl>
+        </div>
+      </article>
+    </div>
+
+    <article class="proj proj-case" id="caso">
+      <div class="case-copy">
+        <p class="proj-tag">Proyecto 04 · Caso de éxito</p>
+        <h3>Experimento de inclinación</h3>
+        <p>Preparación, distribución de pesos, registro de mediciones y elaboración del respaldo técnico para evaluación de estabilidad.</p>
+        <p class="case-how">Se trasladan pesos conocidos de una banda a la otra y se mide la escora con péndulos. Con esas mediciones se determina la altura metacéntrica y la posición del centro de gravedad de la embarcación.</p>
+        <ol class="case-steps">
+          <li><span>01</span>Planificación y ejecución en terreno</li>
+          <li><span>02</span>Medición y análisis de datos</li>
+          <li><span>03</span>Informe técnico</li>
+        </ol>
+        <div class="case-gallery">
+          <button class="thumb" type="button" data-zoom data-group="inclinacion" aria-label="Ampliar: pesos de prueba sobre la cubierta"><img src="assets/img/caso-pesos-600.webp" srcset="assets/img/caso-pesos-600.webp 600w, assets/img/caso-pesos-1100.webp 1100w" sizes="140px" width="600" height="450" loading="lazy" decoding="async" alt="Pesos de prueba sobre la cubierta"></button>
+          <button class="thumb" type="button" data-zoom data-group="inclinacion" aria-label="Ampliar: distribución de pesos en cubierta"><img src="assets/img/caso-distribucion-600.webp" srcset="assets/img/caso-distribucion-600.webp 600w, assets/img/caso-distribucion-960.webp 960w" sizes="140px" width="600" height="800" loading="lazy" decoding="async" alt="Distribución de pesos en cubierta"></button>
+          <button class="thumb" type="button" data-zoom data-group="inclinacion" aria-label="Ampliar: pesos alineados junto a la borda"><img src="assets/img/caso-pesos-banda-600.webp" srcset="assets/img/caso-pesos-banda-600.webp 600w, assets/img/caso-pesos-banda-1100.webp 1100w" sizes="140px" width="600" height="450" loading="lazy" decoding="async" alt="Pesos alineados junto a la borda"></button>
+          <button class="thumb" type="button" data-zoom data-group="inclinacion" aria-label="Ampliar: cubierta preparada en puerto"><img src="assets/img/caso-cubierta-puerto-600.webp" srcset="assets/img/caso-cubierta-puerto-600.webp 600w, assets/img/caso-cubierta-puerto-1100.webp 1100w" sizes="140px" width="600" height="450" loading="lazy" decoding="async" alt="Cubierta preparada para la prueba en puerto"></button>
+        </div>
+      </div>
+      <figure class="incline" data-incline aria-labelledby="incline-titulo">
+        <div class="incline-head">
+          <p class="incline-title" id="incline-titulo">Pruébalo: mueve los pesos</p>
+          <div class="incline-controls" role="group" aria-label="Posición de los pesos de prueba">
+            <button type="button" data-weights="-1" aria-pressed="false">Babor</button>
+            <button type="button" data-weights="0" aria-pressed="true">Al centro</button>
+            <button type="button" data-weights="1" aria-pressed="false">Estribor</button>
+          </div>
+        </div>
+        <svg class="incline-svg" viewBox="0 0 640 380" role="img" aria-labelledby="incline-desc">
+          <desc id="incline-desc">Sección transversal de una embarcación. Al mover los pesos de prueba hacia una banda, la embarcación escora y el péndulo marca el ángulo sobre la regla.</desc>
+          <defs><pattern id="igrid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(167,182,193,.12)" stroke-width="1"/></pattern></defs>
+          <rect width="640" height="380" fill="url(#igrid)"/>
+          <g data-hull>
+            <path class="hull" d="M190 170 H450 V246 Q450 300 400 302 H240 Q190 300 190 246 Z"/>
+            <path class="deckhouse" d="M268 170 V118 H372 V170"/>
+            <line class="mast" x1="320" y1="118" x2="320" y2="96"/>
+            <line class="cl" x1="320" y1="96" x2="320" y2="302"/>
+            <line class="batten" x1="270" y1="268" x2="370" y2="268"/>
+            <g class="batten-ticks"><line x1="280" y1="262" x2="280" y2="274"/><line x1="300" y1="264" x2="300" y2="272"/><line x1="320" y1="260" x2="320" y2="276"/><line x1="340" y1="264" x2="340" y2="272"/><line x1="360" y1="262" x2="360" y2="274"/></g>
+            <g data-weights-group><rect class="weight" x="300" y="148" width="18" height="22" rx="2"/><rect class="weight" x="322" y="148" width="18" height="22" rx="2"/></g>
+          </g>
+          <line class="pendulum" data-pendulum x1="320" y1="100" x2="320" y2="268"/>
+          <circle class="bob" data-bob cx="320" cy="268" r="5"/>
+          <rect class="water" x="0" y="232" width="640" height="148"/>
+          <line class="waterline" x1="0" y1="232" x2="640" y2="232"/>
+          <text class="label" x="24" y="222">Línea de flotación</text>
+          <text class="label" x="120" y="150">Babor</text>
+          <text class="label" x="470" y="150">Estribor</text>
+          <text class="label label-angle" data-angle x="420" y="92"></text>
+        </svg>
+      </figure>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CONTACTO + FORMULARIO ============ -->
+<section class="contact" id="contacto" aria-labelledby="contacto-titulo">
+  <div class="wrap contact-grid">
+    <div class="contact-copy">
+      <p class="kicker">Contacto</p>
+      <h2 id="contacto-titulo">Cuéntanos tu necesidad.</h2>
+      <p class="lead">Te responderemos a la brevedad con una propuesta técnica concreta.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="cl-label">WhatsApp</span>
+          <a class="cl-value" href="https://wa.me/56962757559?text=Hola%20CAUVA%2C%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener">+56 9 6275 7559</a>
+        </li>
+        <li>
+          <span class="cl-label">Para cotizar más rápido</span>
+          <span class="cl-text">Indica el tipo de embarcación o estructura, la ubicación y los plazos.</span>
+        </li>
       </ul>
+      <img class="contact-logo" src="assets/brand/logo-cauva-480.webp" width="480" height="215" loading="lazy" decoding="async" alt="CAUVA">
     </div>
-    <div class="case-gallery reveal">
 
-      <img class="zoomable" src="assets/img/inclinacion-2.jpeg" alt="Pesos de prueba">
-
-      <img class="zoomable" src="assets/img/inclinacion-6.jpeg" alt="Distribución de pesos">
-    </div>
-  </div>
-</section>
-
-<section id="contacto" class="contact">
-  <div class="container contact-clean">
-    <div>
-      <p class="eyebrow contact-eyebrow">Contacto</p>
-      <h2>Hablemos de tu proyecto.</h2>
-      <p>Cuéntanos tu necesidad y te responderemos a la brevedad.</p>
-    </div>
-    <div class="contact-actions">
-      <a class="button dark-button" href="https://wa.me/56962757559?text=Hola%20CAUVA,%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a>
-      <button class="button white-button open-quote" type="button">Solicitar cotización</button>
-    </div>
-  </div>
-</section>
-</main>
-
-<div class="quote-modal" aria-hidden="true">
-  <div class="modal-backdrop"></div>
-  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="quote-title">
-    <button class="modal-close" type="button" aria-label="Cerrar">×</button>
-    <p class="eyebrow">Solicitud de cotización</p>
-    <h2 id="quote-title">Cuéntanos qué necesitas.</h2>
-
-    <form action="https://formsubmit.co/dmunoz@cauva.cl" method="POST">
+    <form class="quote-form" action="https://formsubmit.co/dmunoz@cauva.cl" method="POST" data-quote-form aria-labelledby="form-titulo">
+      <h3 id="form-titulo">Solicitud de cotización</h3>
       <input type="hidden" name="_subject" value="Nueva solicitud de cotización desde cauva.cl">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://cauva.cl/?cotizacion=enviada">
+      <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="form-note">Los campos con <span class="req">*</span> son obligatorios.</p>
 
-      <label>Nombre o empresa<input type="text" name="Nombre o empresa" required></label>
-      <label>RUT<input type="text" name="RUT" placeholder="12.345.678-9"></label>
-      <label>Correo electrónico<input type="email" name="Correo" required></label>
-      <label>Número de contacto<input type="tel" name="Número de contacto" required></label>
-
-      <label class="full">Servicio requerido
-        <select name="Servicio requerido" required>
-          <option value="" selected disabled>Seleccionar</option>
-          <option>Ingeniería Naval</option>
-          <option>Planos reglamentarios</option>
-          <option>Cálculo de arqueo</option>
-          <option>Estudio de estabilidad</option>
-          <option>Manual de sujeción de carga</option>
-          <option>Cálculos estructurales</option>
-          <option>Medición de espesores</option>
-          <option>Certificación de grúas, winches o cabrestantes</option>
-          <option>Certificación de línea de remolque</option>
-          <option>Certificación de estructuras para centro de cultivo</option>
-          <option>Cálculo para faena de remolque</option>
-          <option>Bollard Pull</option>
-          <option>Pruebas de tracción</option>
-          <option>Inspección de casco</option>
-          <option>Inspección de centro de cultivo</option>
+      <div class="field field-full">
+        <label for="q-nombre">Nombre o empresa <span class="req" aria-hidden="true">*</span></label>
+        <input id="q-nombre" type="text" name="Nombre o empresa" autocomplete="organization" required aria-describedby="q-nombre-e">
+        <p class="field-error" id="q-nombre-e"></p>
+      </div>
+      <div class="field">
+        <label for="q-correo">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
+        <input id="q-correo" type="email" name="Correo" autocomplete="email" inputmode="email" required aria-describedby="q-correo-e">
+        <p class="field-error" id="q-correo-e"></p>
+      </div>
+      <div class="field">
+        <label for="q-telefono">Número de contacto <span class="req" aria-hidden="true">*</span></label>
+        <input id="q-telefono" type="tel" name="Número de contacto" autocomplete="tel" placeholder="+56 9 1234 5678" required aria-describedby="q-telefono-e">
+        <p class="field-error" id="q-telefono-e"></p>
+      </div>
+      <div class="field">
+        <label for="q-rut">RUT <span class="optional">(opcional)</span></label>
+        <input id="q-rut" type="text" name="RUT" placeholder="12.345.678-9" autocomplete="off" aria-describedby="q-rut-e">
+        <p class="field-error" id="q-rut-e"></p>
+      </div>
+      <div class="field">
+        <label for="q-servicio">Servicio requerido <span class="req" aria-hidden="true">*</span></label>
+        <select id="q-servicio" name="Servicio requerido" required aria-describedby="q-servicio-e">
+          <option value="">Seleccionar</option>
+          <optgroup label="01 · Ingeniería naval">
+            <option>Ingeniería Naval</option>
+            <option>Planos reglamentarios</option>
+            <option>Cálculo de arqueo</option>
+            <option>Estudio de estabilidad</option>
+            <option>Manual de sujeción de carga</option>
+            <option>Cálculos estructurales</option>
+          </optgroup>
+          <optgroup label="02 · Certificaciones">
+            <option>Certificación de grúas, winches o cabrestantes</option>
+            <option>Certificación de línea de remolque</option>
+            <option>Certificación de estructuras para centro de cultivo</option>
+          </optgroup>
+          <optgroup label="03 · Inspecciones técnicas">
+            <option>Medición de espesores</option>
+            <option>Inspección de casco</option>
+            <option>Inspección de centro de cultivo</option>
+          </optgroup>
+          <optgroup label="04 · Operaciones marítimas">
+            <option>Cálculo para faena de remolque</option>
+            <option>Bollard Pull</option>
+            <option>Pruebas de tracción</option>
+          </optgroup>
+          <optgroup label="05 · Modelado 3D">
+            <option>Modelado 3D</option>
+          </optgroup>
           <option>Otro</option>
         </select>
-      </label>
-
-      <label class="full">Detalle del requerimiento<textarea name="Detalle del requerimiento" rows="4"></textarea></label>
-      <button class="button primary full" type="submit">Enviar solicitud</button>
+        <p class="field-error" id="q-servicio-e"></p>
+      </div>
+      <div class="field field-full">
+        <label for="q-detalle">Detalle del requerimiento</label>
+        <textarea id="q-detalle" name="Detalle del requerimiento" rows="4" placeholder="Tipo de embarcación o estructura, ubicación, plazos…"></textarea>
+      </div>
+      <div class="form-actions field-full">
+        <button class="btn btn-primary btn-lg btn-block" type="submit" data-submit>Enviar solicitud</button>
+      </div>
     </form>
   </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="assets/brand/logo-cauva-480.webp" width="480" height="215" loading="lazy" decoding="async" alt="CAUVA">
+      <p class="footer-slogan">Ingeniería que resuelve.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Pie de página">
+      <a href="#servicios">Servicios</a>
+      <a href="#modelado">Modelado 3D</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="footer-contact">
+      <a class="btn btn-primary" href="#contacto" data-quote>Solicitar cotización</a>
+      <a class="btn btn-outline" href="https://wa.me/56962757559?text=Hola%20CAUVA%2C%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener">WhatsApp +56 9 6275 7559</a>
+    </div>
+    <p class="footer-legal">© <span data-year>2026</span> CAUVA SpA · Ingeniería naval y operaciones marítimas · Precisión · Eficiencia · Compromiso</p>
+  </div>
+</footer>
+
+<div class="action-bar" data-action-bar>
+  <a class="btn btn-primary" href="#contacto" data-quote>Cotizar</a>
+  <a class="btn btn-glass" href="https://wa.me/56962757559?text=Hola%20CAUVA%2C%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a>
 </div>
 
-<div class="lightbox" aria-hidden="true">
-  <button class="lightbox-close" type="button" aria-label="Cerrar imagen">×</button>
-  <button class="lightbox-prev" type="button" aria-label="Imagen anterior">←</button>
-  <figure class="lightbox-content">
-    <img src="" alt="">
-    <figcaption></figcaption>
+<dialog class="menu" id="menu" aria-label="Menú" data-menu>
+  <div class="menu-top">
+    <img src="assets/brand/logo-cauva-480.webp" width="480" height="215" alt="CAUVA">
+    <button class="x-btn" type="button" data-menu-close aria-label="Cerrar menú"><span aria-hidden="true"></span></button>
+  </div>
+  <nav class="menu-nav" aria-label="Navegación del menú">
+    <a href="#servicios">Servicios</a>
+    <a href="#modelado">Modelado 3D</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <div class="menu-foot">
+    <a class="btn btn-primary btn-lg" href="#contacto" data-quote>Solicitar cotización</a>
+    <a class="btn btn-outline btn-lg" href="https://wa.me/56962757559?text=Hola%20CAUVA%2C%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</dialog>
+
+<dialog class="lightbox" aria-label="Galería" data-lightbox>
+  <figure class="lb-figure">
+    <img src="" alt="" data-lb-img>
+    <figcaption class="lb-bar"><span data-lb-text></span><span class="lb-count" data-lb-count></span></figcaption>
   </figure>
-  <button class="lightbox-next" type="button" aria-label="Imagen siguiente">→</button>
-</div>
+  <button class="lb-btn lb-prev" type="button" data-lb-prev aria-label="Imagen anterior"><span aria-hidden="true"></span></button>
+  <button class="lb-btn lb-next" type="button" data-lb-next aria-label="Imagen siguiente"><span aria-hidden="true"></span></button>
+  <button class="x-btn lb-close" type="button" data-lb-close aria-label="Cerrar galería"><span aria-hidden="true"></span></button>
+</dialog>
 
-<footer><div class="container">© <span id="year"></span> CAUVA SpA · Ingeniería Naval y Operaciones Marítimas</div></footer>
-<script src="script-v6.js?v=6"></script>
-<script src="script-v7.js?v=7"></script>
+<div class="toast" role="status" aria-live="polite" data-toast hidden>
+  <p><strong>Solicitud enviada.</strong> Recibimos tu solicitud de cotización y te responderemos a la brevedad.</p>
+  <button class="x-btn" type="button" data-toast-close aria-label="Cerrar aviso"><span aria-hidden="true"></span></button>
+</div>
 </body>
 </html>

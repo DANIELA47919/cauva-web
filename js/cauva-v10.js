@@ -179,21 +179,35 @@
     const playBtn = $('[data-film-play]', film);
     const playLabel = $('[data-film-play-label]', film);
     const tag = $('[data-film-tag]', film);
-    const caption = $('[data-film-caption]', film);
+    const sub = $('[data-film-sub]', film);
+    const subBox = $('.film-sub', film);
     const titles = steps.map(b => $('.fs-num', b).textContent + ' · ' + $('.fs-title', b).textContent);
     const DUR = 5200;
     let idx = 0, playing = false, userPaused = false, t0 = 0, elapsed = 0, raf = 0, visible = false, ended = false;
 
+    let prevTimer = 0, textTimer = 0;
     function show(i) {
+      const prev = idx;
       idx = i;
-      scenes.forEach((s, k) => s.classList.toggle('is-active', k === i));
+      clearTimeout(prevTimer);
+      scenes.forEach((s, k) => {
+        s.classList.remove('is-prev');
+        if (k === prev && k !== i) s.classList.add('is-prev');
+        s.classList.toggle('is-active', k === i);
+      });
+      prevTimer = setTimeout(() => scenes.forEach(s => s.classList.remove('is-prev')), reduced() ? 0 : 1200);
       steps.forEach((b, k) => {
         if (k === i) b.setAttribute('aria-current', 'step'); else b.removeAttribute('aria-current');
         b.classList.toggle('is-done', k < i);
         b.style.removeProperty('--fill');
       });
-      tag.textContent = titles[i];
-      if (caption) caption.innerHTML = '<strong>' + titles[i] + '</strong>' + $('.fs-text', steps[i]).textContent;
+      const swapText = () => {
+        tag.textContent = titles[i];
+        if (sub) sub.textContent = $('.fs-text', steps[i]).textContent;
+        if (!reduced()) { subBox.classList.remove('is-swap'); void subBox.offsetWidth; subBox.classList.add('is-swap'); }
+      };
+      clearTimeout(textTimer);
+      if (prev === i || reduced()) swapText(); else textTimer = setTimeout(swapText, 480);
       const svg = $('.draw', scenes[i]);
       if (svg) { svg.classList.remove('is-drawn'); void svg.getBoundingClientRect(); requestAnimationFrame(() => drawIn(svg)); }
     }
